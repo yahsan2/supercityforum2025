@@ -1,14 +1,22 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "rewrites": [
+  "routes": [
     {
-      "source": "/tiiki/toc/event/tocforum2025/:path*",
-      "destination": "/:path*"
+      "src": "/tiiki/toc/event/tocforum2025/assets/(.*)",
+      "dest": "/assets/$1"
     },
     {
-      "source": "/tiiki/toc/event/tocforum2025",
-      "destination": "/index.html"
+      "src": "/tiiki/toc/event/tocforum2025/sousei/(.*)",
+      "dest": "/sousei/$1"
+    },
+    {
+      "src": "/tiiki/toc/event/tocforum2025/(.*\\.html)?",
+      "dest": "/$1"
+    },
+    {
+      "src": "/tiiki/toc/event/tocforum2025/?$",
+      "dest": "/index.html"
     }
   ],
   "headers": [
