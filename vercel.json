@@ -3,6 +3,11 @@
   "outputDirectory": "dist",
   "routes": [
     {
+      "src": "^/$",
+      "status": 301,
+      "headers": { "Location": "/tiiki/toc/event/tocforum2025/" }
+    },
+    {
       "src": "/tiiki/toc/event/tocforum2025/assets/(.*)",
       "dest": "/assets/$1"
     },
