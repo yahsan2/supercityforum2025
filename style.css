@@ -442,13 +442,13 @@ body {
 	}
 
 /* プログラム（タイムライン、パネリスト） */
-																								.photo-session {
-																								background: linear-gradient(
-																									135deg,
-																									#8b9dc3 0%,
-																									#5a7ba7 100%
-																								);
-																							}
+																															.photo-session {
+																															background: linear-gradient(
+																																135deg,
+																																#fff 0%,
+																																#5a7ba7 100%
+																															);
+																														}
 .photo-session .timeline-content {
 	color: #333;
 }
@@ -615,7 +615,7 @@ h3 {
 	background: linear-gradient(135deg, #7ecdc4 0%, #5aaba3 100%);
 }
 .registration-card.venue .card-header {
-	background: linear-gradient(135deg, #8b9dc3 0%, #6b86c7 100%);
+	background: linear-gradient(135deg, #a5b7dc 0%, #9ba6e7 100%);
 }
 .card-icon {
 	font-size: 2rem;
@@ -697,7 +697,7 @@ h3 {
 	box-shadow: 0 6px 25px rgba(126, 205, 196, 0.4);
 }
 .venue-btn {
-	background: linear-gradient(135deg, #8b9dc3 0%, #6b86c7 100%);
+	background: linear-gradient(135deg, #a5b7dc 0%, #a5b7dc 0%, #9ba6e7 100%);
 	color: white;
 }
 .venue-btn:hover {
