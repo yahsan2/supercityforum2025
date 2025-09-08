@@ -1,0 +1,309 @@
+<!-- 共通フッター -->
+<style>
+    /* フッター専用スタイル */
+    #footerBlock {
+        background: #003776;
+        color: white;
+        padding: 40px 0 20px;
+        margin-top: 60px;
+    }
+    
+    .footer-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .footer-section h3 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    }
+    
+    .footer-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .footer-links li {
+        margin-bottom: 8px;
+    }
+    
+    .footer-links a {
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .footer-links a:hover {
+        color: #FFE000;
+        text-decoration: underline;
+    }
+    
+    .footer-links a::before {
+        content: "▸";
+        color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .footer-contact {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 8px;
+    }
+    
+    .footer-contact h4 {
+        font-size: 14px;
+        margin-bottom: 10px;
+        color: #FFE000;
+    }
+    
+    .footer-contact p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 5px 0;
+    }
+    
+    .footer-contact a {
+        color: #FFE000;
+        text-decoration: none;
+    }
+    
+    .footer-contact a:hover {
+        text-decoration: underline;
+    }
+    
+    .footer-bottom {
+        padding-top: 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .footer-bottom-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .footer-logos {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .footer-logos img {
+        height: 40px;
+        opacity: 0.9;
+        transition: opacity 0.3s;
+    }
+    
+    .footer-logos a:hover img {
+        opacity: 1;
+    }
+    
+    .footer-policies {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .footer-policies a {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        font-size: 13px;
+        padding: 0 10px;
+        border-right: 1px solid rgba(255, 255, 255, 0.3);
+        transition: color 0.3s;
+    }
+    
+    .footer-policies a:last-child {
+        border-right: none;
+    }
+    
+    .footer-policies a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+    
+    .footer-copyright {
+        text-align: center;
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    
+    .back-to-top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        background: #003776;
+        color: white;
+        border: 2px solid white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s;
+        z-index: 999;
+    }
+    
+    .back-to-top.visible {
+        opacity: 0.9;
+        visibility: visible;
+    }
+    
+    .back-to-top:hover {
+        opacity: 1;
+        background: #00529f;
+    }
+    
+    @media (max-width: 768px) {
+        .footer-content {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        
+        .footer-bottom-content {
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .footer-logos {
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .footer-policies {
+            justify-content: center;
+        }
+        
+        .footer-policies a {
+            padding: 5px 10px;
+            border-right: none;
+            display: block;
+        }
+    }
+</style>
+
+<footer id="footerBlock">
+    <div class="footer-inner">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>関連リンク</h3>
+                <ul class="footer-links">
+                    <li><a href="https://www.chisou.go.jp/tiiki/kokusentoc/index.html">国家戦略特区</a></li>
+                    <li><a href="https://www.chisou.go.jp/tiiki/kouzou2/index.html">構造改革特区</a></li>
+                    <li><a href="https://www.chisou.go.jp/tiiki/sogotoc/index.html">総合特区</a></li>
+                    <li><a href="https://www.chisou.go.jp/sousei/index.html">まち・ひと・しごと創生</a></li>
+                    <li><a href="https://www.cas.go.jp/jp/seisaku/digitaldenen/index.html">デジタル田園都市国家構想</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>イベント情報</h3>
+                <ul class="footer-links">
+                    <li><a href="./program.html">プログラム</a></li>
+                    <li><a href="./networking.html">参加者同士の交流</a></li>
+                    <li><a href="./registration.html">申込情報</a></li>
+                    <li><a href="./access.html">アクセス</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>関連省庁</h3>
+                <ul class="footer-links">
+                    <li><a href="https://www.cao.go.jp/" target="_blank">内閣府</a></li>
+                    <li><a href="https://www.digital.go.jp/" target="_blank">デジタル庁</a></li>
+                    <li><a href="https://www.soumu.go.jp/" target="_blank">総務省</a></li>
+                    <li><a href="https://www.mhlw.go.jp/" target="_blank">厚生労働省</a></li>
+                    <li><a href="https://www.meti.go.jp/" target="_blank">経済産業省</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <div class="footer-contact">
+                    <h4>お問い合わせ</h4>
+                    <p><strong>デジタル田園健康特区フォーラム事務局</strong></p>
+                    <p>〒100-8914<br>東京都千代田区永田町1-6-1</p>
+                    <p>TEL: <a href="tel:0312345678">03-1234-5678</a></p>
+                    <p>Email: <a href="mailto:forum2025@cao.go.jp">forum2025@cao.go.jp</a></p>
+                    <p>受付時間: 平日 9:00-17:00</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="footer-logos">
+                    <a href="https://www.cao.go.jp/" target="_blank">
+                        <img src="https://www.chisou.go.jp/common2/images/logo_cao_white.svg" alt="内閣府">
+                    </a>
+                    <a href="https://www.chisou.go.jp/" target="_blank">
+                        <img src="https://www.chisou.go.jp/common2/images/logo_chisou_white.svg" alt="地方創生">
+                    </a>
+                </div>
+                
+                <div class="footer-policies">
+                    <a href="https://www.chisou.go.jp/privacy.html">プライバシーポリシー</a>
+                    <a href="https://www.chisou.go.jp/accessibility.html">アクセシビリティ</a>
+                    <a href="https://www.chisou.go.jp/sitemap.html">サイトマップ</a>
+                    <a href="https://www.chisou.go.jp/link.html">リンク・著作権</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-copyright">
+            <p>Copyright &copy; 2025 Cabinet Office, Government of Japan. All Rights Reserved.</p>
+            <p>内閣府 地方創生推進事務局</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ページトップへ戻るボタン -->
+<a href="#" class="back-to-top" id="backToTop">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M10 15L10 5M10 5L5 10M10 5L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</a>
+
+<script>
+    // ページトップへ戻るボタンの表示制御
+    window.addEventListener('scroll', function() {
+        const backToTop = document.getElementById('backToTop');
+        if (window.pageYOffset > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
+    
+    // スムーズスクロール
+    document.getElementById('backToTop').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>参加者同士の交流 | デジタル田園健康特区フォーラム</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="wrapper">
+        {{> header}}
+    
+    <!-- ナビゲーション -->
+    <nav class="navigation">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="./index.html" class="nav-link">トップ</a>
+                <a href="./program.html" class="nav-link">プログラム</a>
+                <a href="./networking.html" class="nav-link active">参加者同士の交流</a>
+                <a href="./registration.html" class="nav-link">申込情報</a>
+                <a href="./access.html" class="nav-link">アクセス</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ページヘッダー -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">参加者同士の交流</h1>
+            <p class="page-subtitle">全国の地方創生に取り組む仲間とつながる</p>
+        </div>
+    </section>
+
+    <!-- 交流機能 -->
+    <section class="section">
+        <div class="container">
+            <div class="networking-intro">
+                <h2>交流プラットフォームについて</h2>
+                <p class="lead-text">
+                    本フォーラムでは、参加者同士の活発な交流を促進するため、
+                    オンライン・オフライン双方で様々な交流機会を提供しています。
+                    地方創生に取り組む全国の自治体、企業、団体の皆様と
+                    ネットワークを構築する絶好の機会です。
+                </p>
+            </div>
+
+            <div class="networking-features">
+                <h2>交流機能のご紹介</h2>
+                
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">💬</div>
+                        <h3>リアルタイムチャット</h3>
+                        <p>フォーラム開催中、参加者同士でリアルタイムにチャットが可能です。講演内容についての意見交換や質問の共有ができます。</p>
+                        <div class="feature-details">
+                            <h4>機能詳細</h4>
+                            <ul>
+                                <li>テーマ別チャットルーム</li>
+                                <li>ダイレクトメッセージ機能</li>
+                                <li>ファイル共有機能</li>
+                                <li>アーカイブ機能（後日閲覧可能）</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🎥</div>
+                        <h3>オンライン交流会</h3>
+                        <p>ビデオ会議システムを使用した少人数グループでの交流会を実施。テーマごとに分かれて深い議論が可能です。</p>
+                        <div class="feature-details">
+                            <h4>開催予定</h4>
+                            <ul>
+                                <li>13:00-13:15 アイスブレイク</li>
+                                <li>14:30-14:45 テーマ別交流会①</li>
+                                <li>16:00-16:15 テーマ別交流会②</li>
+                                <li>17:15-18:00 アフターセッション</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">📝</div>
+                        <h3>Q&Aセッション</h3>
+                        <p>講演者への質問をリアルタイムで投稿できます。他の参加者の質問への「いいね」機能で、関心の高い質問を可視化します。</p>
+                        <div class="feature-details">
+                            <h4>利用方法</h4>
+                            <ul>
+                                <li>専用フォームから質問投稿</li>
+                                <li>質問への投票機能</li>
+                                <li>講演者からの回答通知</li>
+                                <li>FAQ自動生成</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🤝</div>
+                        <h3>マッチング機能</h3>
+                        <p>参加者プロフィールを基に、関心分野が近い参加者とのマッチングを支援。効率的なネットワーキングが可能です。</p>
+                        <div class="feature-details">
+                            <h4>マッチング項目</h4>
+                            <ul>
+                                <li>関心分野（医療、教育、観光等）</li>
+                                <li>所属組織種別</li>
+                                <li>連携希望内容</li>
+                                <li>提供可能なリソース</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>アンケート・投票</h3>
+                        <p>セッション中にリアルタイムアンケートを実施。参加者の意見を即座に可視化し、議論の活性化につなげます。</p>
+                        <div class="feature-details">
+                            <h4>実施予定</h4>
+                            <ul>
+                                <li>事前アンケート（申込時）</li>
+                                <li>セッション中の即時投票</li>
+                                <li>満足度調査</li>
+                                <li>今後の要望調査</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h3>資料共有</h3>
+                        <p>講演資料や関連情報を参加者間で共有。フォーラム終了後も継続的な情報交換が可能です。</p>
+                        <div class="feature-details">
+                            <h4>共有可能な資料</h4>
+                            <ul>
+                                <li>講演スライド（許可済み）</li>
+                                <li>事例集・ベストプラクティス</li>
+                                <li>参考文献リスト</li>
+                                <li>連絡先交換カード</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="networking-schedule">
+                <h2>交流タイムテーブル</h2>
+                <div class="schedule-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>時間</th>
+                                <th>現地参加</th>
+                                <th>オンライン参加</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12:30-13:00</td>
+                                <td>受付・名刺交換</td>
+                                <td>オンラインラウンジ開放</td>
+                            </tr>
+                            <tr>
+                                <td>14:30-14:45</td>
+                                <td>コーヒーブレイク</td>
+                                <td>ブレイクアウトルーム①</td>
+                            </tr>
+                            <tr>
+                                <td>16:00-16:15</td>
+                                <td>ポスターセッション</td>
+                                <td>ブレイクアウトルーム②</td>
+                            </tr>
+                            <tr>
+                                <td>17:15-18:00</td>
+                                <td>懇親会</td>
+                                <td>オンライン懇親会</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="networking-guidelines">
+                <h2>交流にあたってのお願い</h2>
+                <div class="guidelines-content">
+                    <div class="guideline-item">
+                        <h3>プライバシーの尊重</h3>
+                        <p>他の参加者の個人情報や所属組織の機密情報については、適切に取り扱いください。</p>
+                    </div>
+                    <div class="guideline-item">
+                        <h3>建設的な対話</h3>
+                        <p>多様な意見を尊重し、建設的で前向きな議論を心がけてください。</p>
+                    </div>
+                    <div class="guideline-item">
+                        <h3>積極的な参加</h3>
+                        <p>ぜひ積極的に交流機能をご活用いただき、新しいつながりを作ってください。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="networking-cta">
+                <h2>交流プラットフォームへのアクセス</h2>
+                <p>交流プラットフォームは、参加登録完了後にアクセス情報をお送りします。</p>
+                <a href="./registration.html" class="btn-primary large">
+                    <span>参加申込はこちら</span>
+                    <svg class="btn-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+        {{> footer}}
+    </div>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
