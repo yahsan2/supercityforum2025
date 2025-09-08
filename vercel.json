@@ -1,0 +1,25 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/tiiki/toc/event/tocforum2025/:path*",
+      "destination": "/:path*"
+    },
+    {
+      "source": "/tiiki/toc/event/tocforum2025",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/tiiki/toc/event/tocforum2025/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    }
+  ]
+}
