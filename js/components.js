@@ -123,15 +123,16 @@ class ComponentLoader {
         const breadcrumbCurrent = container.querySelector('.breadcrumb-item.current');
         if (breadcrumbCurrent) {
             const pageNames = {
-                'index.html': 'トップ',
-                'program.html': 'プログラム',
-                'networking.html': '参加者同士の交流',
-                'registration.html': '申込情報',
-                'access.html': 'アクセス'
-            };
-            
-            const pageName = pageNames[currentFile] || 'デジタル田園健康特区フォーラム';
-            breadcrumbCurrent.textContent = `${pageName} - デジタル田園健康特区フォーラム`;
+													"index.html": "トップ",
+													"program.html": "プログラム",
+													"networking.html": "参加者同士の交流",
+													"registration.html": "申込情報",
+													"access.html": "アクセス",
+												};
+
+												const pageName =
+													pageNames[currentFile] || "特区フォーラム";
+												breadcrumbCurrent.textContent = `${pageName} - 特区フォーラム`;
         }
     }
     

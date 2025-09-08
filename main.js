@@ -1,6 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log('SEZフォーラムサイトが読み込まれました');
     
+    // ナビゲーションのアクティブ状態を自動設定
+    try {
+        const path = window.location.pathname.split('/').pop() || 'index.html';
+        const links = document.querySelectorAll('.navigation .nav-link');
+        links.forEach(a => a.classList.remove('active'));
+        const target = Array.from(links).find(a => {
+            const href = a.getAttribute('href');
+            // 絶対/相対両対応で末尾一致を判定
+            return href && (href === `./${path}` || href.endsWith(`/${path}`) || href === path);
+        });
+        if (target) target.classList.add('active');
+    } catch (e) {
+        console.warn('ナビゲーションのアクティブ設定に失敗:', e);
+    }
+    
     // スムーススクロール
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -18,7 +33,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // 簡単なインタラクション例
-    const sections = document.querySelectorAll('section');
+    // 問い合わせセクションはアニメーション除外
+    const sections = document.querySelectorAll('section:not(.contact-cta-section)');
     
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {

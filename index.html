@@ -3,208 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>デジタル田園健康特区フォーラム 日本の未来を変える力が地方にあるin加賀</title>
+    <title>特区フォーラム 日本の未来を変える力が地方にあるin加賀</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div id="wrapper">
         {{> header}}
-        
-        <!-- ナビゲーション -->
-    <nav class="navigation">
-        <div class="nav-container">
-            <div class="nav-links">
-                <a href="./index.html" class="nav-link active">トップ</a>
-                <a href="./program.html" class="nav-link">プログラム</a>
-                <a href="./networking.html" class="nav-link">参加者同士の交流</a>
-                <a href="./registration.html" class="nav-link">申込情報</a>
-                <a href="./access.html" class="nav-link">アクセス</a>
-            </div>
-        </div>
-    </nav>
 
     <!-- ファーストビュー -->
     <section id="top" class="hero">
         <div class="hero-background">
             <img src="./images/hero/bg-hero.jpg" alt="日本の未来を変える力が地方にある" class="hero-bg-image">
         </div>
-        
+        <div class="hero-logo">
+            <img src="./images/hero/logo.svg" alt="内閣府" class="hero-logo-image">
+        </div>
+
         <div class="hero-content">
             <!-- 上部ロゴエリア -->
             <div class="hero-header">
-                <div class="logo-container">
-                    <img src="./images/logo-cabinet.png" alt="内閣府" class="logo-cabinet">
-                </div>
-                <div class="event-label">特区活用フォーラム</div>
-            </div>
-
-            <!-- メインタイトル -->
-            <div class="hero-main">
-                <h1 class="main-title">
-                    <span class="title-main">日本の未来を変える力が</span>
-                    <span class="title-sub">地方にある<span class="title-location">in加賀</span></span>
+                <h1 class="logo-container">
+                    <img src="./images/hero/title.png" alt="日本の未来を変える力が地方にある" class="logo-cabinet">
                 </h1>
-                
-                <div class="subtitle">
-                    デジタル田園健康特区フォーラム
+            </div>
+        </div>
+        <!-- ナビゲーション -->
+        <nav class="navigation">
+            <div class="nav-container">
+                <div class="nav-links">
+                    <a href="./index.html" class="nav-link active">トップ</a>
+                    <a href="./program.html" class="nav-link">プログラム</a>
+                    <a href="./networking.html" class="nav-link">参加者同士の交流</a>
+                    <a href="./registration.html" class="nav-link">申込情報</a>
+                    <a href="./access.html" class="nav-link">アクセス</a>
                 </div>
+            </div>
+        </nav>
+    </section>
 
-                <!-- イベント情報 -->
-                <div class="event-info">
-                    <div class="event-details">
-                        <div class="event-date">
-                            <span class="date-year">2025年</span>
-                            <span class="date-main">1月24日</span>
-                            <span class="date-day">(金)</span>
-                        </div>
-                        <div class="event-time">
-                            <span class="time-label">開催時間</span>
-                            <span class="time-value">13:00～17:00（予定）</span>
-                        </div>
-                    </div>
-                    
-                    <div class="event-location">
-                        <span class="location-label">開催地</span>
-                        <span class="location-main">加賀 KAGAホール</span>
-                        <span class="location-sub">加賀市イノベーションセンター KICI CHINO</span>
-                    </div>
-
-                    <div class="event-format">
-                        <span class="format-badge">現地参加/WEB LIVE配信</span>
+    <!-- 概要 -->
+    <section id="about" class="section section-alt">
+        <div class="container">
+            <div class="about-content">
+                <p>
+                    日本では「構造改革特区」「国家戦略特区」「総合特区」の三つの特区制度を設け、国・自治体・事業者が協力し規制改革を推進しています。この規制改革を用いて、地方創生や国際競争力強化に資する地域課題の解決や新たなビジネス展開が可能となっています。
+特区制度の運用を通じて、保育・教育・観光・農業・医療など幅広い分野で特色ある取り組みが進められ、規制・制度改革の成果も広がっています。その成果をより多くの事業者や自治体に伝えるため、東京都（会場名）で「特区フォーラム」を開催します。
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- 開催情報 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">開催情報</h2>
+            <div class="event-info-modern">
+                <div class="event-info-row">
+                    <div class="event-label-badge">開催日時</div>
+                    <div class="event-info-content">
+                        <div class="event-date-main">2025年1月24日(金)</div>
+                        <div class="event-time-detail">13:30-16:20</div>
                     </div>
                 </div>
+                <div class="event-info-row">
+                    <div class="event-label-badge">会　場</div>
+                    <div class="event-info-content">
+                        <div class="event-venue-main">xx市イノベーションセンター</div>
+                        <div class="event-venue-sub">（xx交流プラザさくら3階）</div>
+                    </div>
+                </div>
+                <div class="event-info-row">
+                    <div class="event-label-badge">主　催</div>
+                    <div class="event-info-content">
+                        <div class="event-organizer">内閣府</div>
+                    </div>
+                </div>
+                <div class="event-info-row">
+                    <div class="event-label-badge">定員/参加費</div>
+                    <div class="event-info-content">
+                        <div class="event-co-organizer">
+                            <p>定員：対面○○人、オンライン○○人</p>
+                            <p>参加費：無料</p>
+                            <p>会場・オンラインともに事前申込制</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-info-row">
+                    <div class="event-label-badge">共　催</div>
+                    <div class="event-info-content">
+                        <div class="event-co-organizer">加賀市、茅野市、吉備中央町</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- 新着情報（開催情報の下・お問い合わせの上） -->
+    <section id="news" class="section">
+        <div class="container">
+            <h2 class="section-title">新着情報</h2>
+            <div class="news">
+                <ul class="news-list" aria-live="polite">
+                    <li class="news-item">
+                        <time class="news-date" datetime="2025-01-10">2025.01.10</time>
+                        <a class="news-link" href="./program.html">プログラムを公開しました</a>
+                    </li>
+                    <li class="news-item">
+                        <time class="news-date" datetime="2024-12-20">2024.12.20</time>
+                        <a class="news-link" href="./registration.html">参加申込を開始しました（会場・オンライン）</a>
+                    </li>
+                    <li class="news-item">
+                        <time class="news-date" datetime="2024-12-01">2024.12.01</time>
+                        <a class="news-link" href="./access.html">会場アクセス情報を掲載しました</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- プログラム -->
-    <section id="program" class="section">
+    <!-- お問い合わせ（フッター直前の大きなエリア） -->
+    <section class="contact-cta-section">
         <div class="container">
-            <h2 class="section-title">プログラム</h2>
-            <div class="program-content">
-                <div class="program-schedule">
-                    <div class="schedule-item">
-                        <div class="schedule-time">13:00</div>
-                        <div class="schedule-content">
-                            <h3>開会挨拶</h3>
-                            <p>内閣府 特命担当大臣（地方創生）</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">13:15</div>
-                        <div class="schedule-content">
-                            <h3>基調講演</h3>
-                            <p>デジタル田園都市国家構想の実現に向けた取り組み</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">14:00</div>
-                        <div class="schedule-content">
-                            <h3>事例発表</h3>
-                            <p>加賀市における健康特区の取り組み</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">15:00</div>
-                        <div class="schedule-content">
-                            <h3>パネルディスカッション</h3>
-                            <p>地方創生とデジタル化の未来</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="section-cta">
-                    <a href="./program.html" class="btn-secondary">プログラム詳細を見る</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 参加者同士の交流 -->
-    <section id="networking" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">参加者同士の交流</h2>
-            <div class="networking-content">
-                <div class="networking-feature">
-                    <div class="feature-icon">💬</div>
-                    <h3>オンライン交流会</h3>
-                    <p>全国の参加者とリアルタイムでの意見交換が可能です</p>
-                </div>
-                <div class="networking-feature">
-                    <div class="feature-icon">🤝</div>
-                    <h3>ネットワーキング</h3>
-                    <p>地方創生に取り組む自治体・企業との連携機会を提供</p>
-                </div>
-                <div class="networking-feature">
-                    <div class="feature-icon">📝</div>
-                    <h3>Q&Aセッション</h3>
-                    <p>講演者への質問や参加者同士の情報共有</p>
-                </div>
-                <div class="section-cta">
-                    <a href="./networking.html" class="btn-secondary">詳しく見る</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 申込情報 -->
-    <section id="registration" class="section">
-        <div class="container">
-            <h2 class="section-title">申込情報</h2>
-            <div class="registration-content">
-                <div class="registration-info">
-                    <h3>参加申込について</h3>
-                    <p>下記フォームより必要事項をご入力の上、お申し込みください。</p>
-                    <ul class="registration-list">
-                        <li>参加費：無料</li>
-                        <li>定員：現地参加 100名 / オンライン参加 500名</li>
-                        <li>申込締切：2025年1月20日（月）17:00</li>
-                    </ul>
-                </div>
-                <div class="registration-cta">
-                    <a href="./registration.html" class="btn-primary large">
-                        <span>参加申込フォームへ</span>
-                        <svg class="btn-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <h2 class="section-title">お問い合わせ</h2>
+            <div class="contact-cta" role="region" aria-label="お問い合わせ先">
+                <div class="contact-cta-body">
+                    <div class="contact-cta-dept">内閣府 地方創生推進事務局</div>
+                    <a class="contact-cta-phone" href="tel:035510247" aria-label="電話 03-5510-247">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.3 1.77.54 2.61a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.47-1.06a2 2 0 0 1 2.11-.45c.84.24 1.71.42 2.61.54A2 2 0 0 1 22 16.92z" stroke="#0a3b6b" stroke-width="1.5"/>
                         </svg>
+                        <span>03-5510-247</span>
                     </a>
-                    <p class="registration-note">※外部サイトへ移動します</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- アクセス -->
-    <section id="access" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">アクセス</h2>
-            <div class="access-content">
-                <div class="access-info">
-                    <h3>会場情報</h3>
-                    <div class="venue-info">
-                        <h4>加賀 KAGAホール</h4>
-                        <p>〒922-0057<br>石川県加賀市大聖寺八間道65番地</p>
-                        <p>TEL: 0761-75-7368</p>
-                    </div>
-                    <div class="access-methods">
-                        <h4>アクセス方法</h4>
-                        <ul>
-                            <li>JR加賀温泉駅より車で約15分</li>
-                            <li>小松空港より車で約20分</li>
-                            <li>北陸自動車道 加賀ICより約10分</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="access-map">
-                    <div class="map-placeholder">
-                        <p>地図が表示されます</p>
-                    </div>
-                </div>
-                <div class="section-cta">
-                    <a href="./access.html" class="btn-secondary">詳細なアクセス情報を見る</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
         {{> footer}}
     </div>
