@@ -594,9 +594,6 @@ h3 {
 	border-radius: 16px;
 	overflow: hidden;
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-	transition:
-		transform 0.3s ease,
-		box-shadow 0.3s ease;
 }
 .registration-card:hover {
 	transform: translateY(-5px);
@@ -686,7 +683,6 @@ h3 {
 	text-decoration: none;
 	font-weight: 600;
 	font-size: 1rem;
-	transition: all 0.3s ease;
 }
 .online-btn {
 	background: linear-gradient(135deg, #7ecdc4 0%, #5aaba3 100%);
