@@ -31,22 +31,25 @@ body {
 }
 
 /* ナビゲーション */
-																								.navigation {
-																								background: rgba(
-																									255,
-																									255,
-																									255,
-																									0.95
-																								);
-																								padding: 1rem 0;
-																								position: absolute;
-																								border-radius: 16px;
-																								bottom: 16px;
-																								left: 50%;
-																								transform: translateX(-50%);
-																								width: fit-content;
-																								min-width: 700px;
-																							}
+																											.navigation {
+																											background: rgba(
+																												255,
+																												255,
+																												255,
+																												0.95
+																											);
+																											padding: 1rem 0;
+																											position: absolute;
+																											border-radius: 16px;
+																											bottom: 16px;
+																											left: 50%;
+																											transform: translateX(
+																												-50%
+																											);
+																											width: fit-content;
+																											min-width: 700px;
+																											z-index: 2;
+																										}
 
 .nav-container {
 	max-width: 1200px;
@@ -84,11 +87,7 @@ body {
 	.navigation {
 		width: calc(100% - 2rem);
 		min-width: 0;
-		padding: 0.5rem;
-	}
-	.page-header .navigation {
-		position: relative;
-		margin-top: 3rem;
+		padding: 0.25rem 0.5rem;
 		border-radius: 8px;
 	}
 	.nav-links {
@@ -115,13 +114,21 @@ body {
 																								}
 .hero-logo {
 	position: absolute;
-	top: 2rem;
-	right: 2rem;
 	z-index: 1;
-	padding: 2rem;
 	background: #fff;
 	border-radius: 8px;
+	top: 2rem;
+	right: 2rem;
+	padding: 2rem;
 }
+@media (max-width: 768px) {
+	.hero-logo {
+		top: 0.5rem;
+		right: 0.5rem;
+		padding: 0.5rem;
+	}
+}
+
 .hero-logo-image {
 	width: 150px;
 }
@@ -173,6 +180,7 @@ body {
 }
 @media (max-width: 768px) {
 	.hero-content {
+		margin-top: -1.5rem;
 		padding: 2rem 1rem;
 	}
 	.logo-cabinet {
@@ -365,7 +373,7 @@ body {
 }
 @media (max-width: 768px) {
 	.page-header {
-		padding: 4rem 0 2rem;
+		padding: 5rem 0 2rem;
 	}
 	.page-title {
 		font-size: 2rem;
@@ -576,10 +584,6 @@ body {
 }
 
 /* about-content */
-.about-content {
-	padding-left: 15px;
-	padding-right: 15px;
-}
 @media print, screen and (min-width: 768px) {
 	.about-content {
 		width: 80%;
