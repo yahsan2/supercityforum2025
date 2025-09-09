@@ -18,35 +18,16 @@ body {
 }
 
 /* パンくずリンク */
-.breadcrumb {
-	background: #fff;
-	padding: 1rem 0;
-}
-.breadcrumb-container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 2rem;
-}
-.breadcrumb-list {
-	display: flex;
-	align-items: center;
-	gap: 0.25rem;
+.topicPathBlock {
+	padding: 1rem 2rem;
 	font-size: 0.875rem;
 	color: #333;
+	max-width: 1200px;
+	margin: 0 auto;
 }
-.breadcrumb-item {
-	color: #333;
-}
-.breadcrumb-item a {
-	color: #333;
-	text-decoration: none;
-}
-.breadcrumb-item a:hover {
-	text-decoration: underline;
-}
-.breadcrumb-separator {
-	color: #333;
-	margin: 0 0.25rem;
+
+.topicPathBlock a {
+	color: #0066cc;
 }
 
 /* ナビゲーション */
