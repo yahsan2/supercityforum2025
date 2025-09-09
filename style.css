@@ -359,6 +359,8 @@ body {
 																								background: #fff;
 																								border-radius: 16px;
 																								padding: 2rem;
+																								padding-left: calc(2rem + 15px);
+																								padding-right: calc(2rem + 15px);
 																								box-shadow: 0 4px 20px
 																									rgba(0, 0, 0, 0.08);
 																							}
@@ -494,6 +496,8 @@ body {
 }
 .panelist-info {
 	flex: 1;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 .panelist-name {
 	font-size: 1.1rem;
@@ -541,14 +545,30 @@ body {
 	}
 }
 
+/* about-content */
+.about-content {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* program-detail */
+.program-detail {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 /* ネットワーキング（簡易） */
 																								.networking-intro {
 																								text-align: center;
+																								padding-left: 15px;
+																								padding-right: 15px;
 																							}
 
 /* アクセス（地図） */
 																								.access-map-section {
 																								margin-top: 1.5rem;
+																								padding-left: 15px;
+																								padding-right: 15px;
 																							}
 .map-container {
 	border-radius: 12px;
@@ -561,8 +581,11 @@ body {
 }
 
 /* 登録ページの見出し余白（簡易） */
-.registration-info
-h3 {
+.registration-info {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.registration-info h3 {
 	font-size: 1.5rem;
 	font-weight: 600;
 	color: #333;
@@ -637,6 +660,8 @@ h3 {
 }
 .deadline-info {
 	margin-bottom: 2rem;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 .deadline-item {
 	display: flex;
