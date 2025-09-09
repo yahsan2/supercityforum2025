@@ -105,14 +105,14 @@ body {
 }
 
 /* ヒーロー */
-																								.hero {
-																								position: relative;
-																								min-height: 400px;
-																								display: flex;
-																								align-items: center;
-																								justify-content: center;
-																								overflow: hidden;
-																							}
+																									.hero {
+																									position: relative;
+																									min-height: 360px;
+																									display: flex;
+																									align-items: center;
+																									justify-content: center;
+																									overflow: hidden;
+																								}
 .hero-logo {
 	position: absolute;
 	top: 2rem;
@@ -219,6 +219,13 @@ body {
 }
 
 /* 新着情報 */
+@media print, screen and (min-width: 768px) {
+	.container > .news {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
 																								.news-list {
 																								list-style: none;
 																								margin: 0;
@@ -315,16 +322,17 @@ body {
 }
 
 /* ページヘッダー */
-																								.page-header {
-																								position: relative;
-																								background: linear-gradient(
-																									135deg,
-																									#f8f9fa 0%,
-																									#e9ecef 100%
-																								);
-																								padding: 6rem 0 9rem;
-																								overflow: hidden;
-																							}
+																										.page-header {
+																										position: relative;
+																										background: linear-gradient(
+																											135deg,
+																											#f8f9fa 0%,
+																											#e9ecef 100%
+																										);
+																										padding: 6rem 0 9rem;
+																										height: 360px;
+																										overflow: hidden;
+																									}
 .page-header::before {
 	content: "";
 	position: absolute;
@@ -365,17 +373,27 @@ body {
 }
 
 /* 開催情報（トップ） */
-																								.event-info-modern {
-																								max-width: 900px;
-																								margin: 0 auto;
-																								background: #fff;
-																								border-radius: 16px;
-																								padding: 2rem;
-																								padding-left: calc(2rem + 15px);
-																								padding-right: calc(2rem + 15px);
-																								box-shadow: 0 4px 20px
-																									rgba(0, 0, 0, 0.08);
-																							}
+																									.event-info-modern {
+																									background: #fff;
+																									border-radius: 16px;
+																									padding: 2rem;
+																									padding-left: calc(
+																										2rem +
+																										15px
+																									);
+																									padding-right: calc(
+																										2rem +
+																										15px
+																									);
+																									box-shadow: 0 4px 20px
+																										rgba(0, 0, 0, 0.08);
+																								}
+@media print, screen and (min-width: 768px) {
+	.event-info-modern {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
 .event-info-row {
 	display: flex;
 	align-items: flex-start;
@@ -562,11 +580,23 @@ body {
 	padding-left: 15px;
 	padding-right: 15px;
 }
+@media print, screen and (min-width: 768px) {
+	.about-content {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
 
 /* program-detail */
 .program-detail {
 	padding-left: 15px;
 	padding-right: 15px;
+}
+@media print, screen and (min-width: 768px) {
+	.program-detail {
+		width: 80%;
+		margin: 0 auto;
+	}
 }
 
 /* ネットワーキング（簡易） */
@@ -577,12 +607,20 @@ body {
 																							}
 
 /* アクセス（地図） */
-																								.access-map-section {
+
+.access-map-section {
 																								margin-top: 1.5rem;
 																								padding-left: 15px;
 																								padding-right: 15px;
 																							}
-.map-container {
+@media print, screen and (min-width: 768px) {
+	.access-detail {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+																							.map-container {
 	border-radius: 12px;
 	overflow: hidden;
 }
@@ -596,6 +634,12 @@ body {
 .registration-info {
 	padding-left: 15px;
 	padding-right: 15px;
+}
+@media print, screen and (min-width: 768px) {
+	.registration-info {
+		width: 80%;
+		margin: 0 auto;
+	}
 }
 .registration-info h3 {
 	font-size: 1.5rem;
@@ -709,6 +753,9 @@ body {
 .warning-note svg {
 	flex-shrink: 0;
 }
+.warning-note > span {
+	font-size: 0.75rem;
+}
 .registration-btn {
 	display: inline-flex;
 	align-items: center;
@@ -801,6 +848,12 @@ body {
 	border-radius: 16px;
 	padding: 2rem;
 	box-shadow: 0 6px 24px rgba(0, 44, 92, 0.08);
+}
+@media print, screen and (min-width: 768px) {
+	.contact-cta {
+		width: 80%;
+		margin: 0 auto;
+	}
 }
 .contact-cta-title {
 	font-size: 1.5rem;
