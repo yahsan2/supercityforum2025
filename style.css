@@ -107,7 +107,7 @@ body {
 /* ヒーロー */
 																								.hero {
 																								position: relative;
-																								min-height: 80vh;
+																								min-height: 400px;
 																								display: flex;
 																								align-items: center;
 																								justify-content: center;
