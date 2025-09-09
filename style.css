@@ -154,7 +154,6 @@ body {
 	z-index: 1;
 	width: 100%;
 	max-width: 1200px;
-	padding: 3rem 2rem;
 	text-align: center;
 }
 .hero-header {
@@ -170,7 +169,7 @@ body {
 	justify-content: center;
 }
 .logo-cabinet {
-	width: 75vh;
+	width: 50vh;
 }
 @media (max-width: 768px) {
 	.hero-content {
