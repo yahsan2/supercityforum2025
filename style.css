@@ -134,6 +134,10 @@ body {
   height: 100%;
   z-index: -1;
 }
+.hero-background img {
+  height: 100%;
+  object-fit: cover;
+}
 .hero-bg-image {
   width: 100%;
   height: 80vh;
