@@ -26,6 +26,120 @@ body {
   margin: 0 auto;
 }
 
+/* 日付バナーセクション */
+  .event-date-banner {
+  background: linear-gradient(135deg, #2e4ba7 0%, #4169c7 100%);
+  padding: 2rem 0;
+  position: relative;
+}
+
+.date-banner-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  color: white;
+}
+
+.date-info {
+  display: flex;
+  align-items: flex-end;
+  font-weight: 700;
+  gap: 0.25rem;
+}
+.date-info > span {
+  line-height: 1;
+}
+
+.date-info .year {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.date-info .date-number {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 0.8;
+}
+
+.date-info .month,
+.date-info .day {
+  font-size: 1.75rem;
+  margin: 0 0.25rem;
+}
+
+.date-info .weekday {
+  font-size: 1.5rem;
+  background: white;
+  color: #2e4ba7;
+  padding: 0.25rem 0.75rem;
+  border-radius: 8px;
+  margin-left: 0.5rem;
+}
+
+.venue-info {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.venue-info .hall-info {
+  font-size: 1.25rem;
+  opacity: 0.95;
+  margin-left: 0.5rem;
+}
+
+/* 日付バナー レスポンシブ対応 */
+@media (max-width: 768px) {
+  .event-date-banner {
+    padding: 1.5rem 0;
+  }
+
+  .date-banner-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .date-info {
+    justify-content: center;
+  }
+
+  .date-info .year {
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+  }
+
+  .date-info .date-number {
+    font-size: 2.5rem;
+  }
+
+  .date-info .month,
+  .date-info .day {
+    font-size: 1.25rem;
+  }
+
+  .date-info .weekday {
+    font-size: 1.25rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .venue-info {
+    font-size: 1.125rem;
+    text-align: center;
+  }
+
+  .venue-info .hall-info {
+    font-size: 1rem;
+    display: block;
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}
+
 /* ナビゲーション */
 .navigation {
   background: rgba(255, 255, 255, 0.95);
