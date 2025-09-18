@@ -18,13 +18,13 @@ body {
 }
 
 /* パンくずリンク */
-.topicPathBlock {
-  padding: 1rem 2rem;
-  font-size: 0.875rem;
-  color: #333;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+    .topicPathBlock {
+    padding: 1rem 2rem;
+    font-size: 0.875rem;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
 /* 日付バナーセクション */
   .event-date-banner {
@@ -141,18 +141,18 @@ body {
 }
 
 /* ナビゲーション */
-.navigation {
-  background: rgba(255, 255, 255, 0.95);
-  padding: 1rem 0;
-  position: absolute;
-  border-radius: 16px;
-  bottom: 16px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: fit-content;
-  min-width: 700px;
-  z-index: 2;
-}
+    .navigation {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem 0;
+    position: absolute;
+    border-radius: 16px;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    min-width: 700px;
+    z-index: 2;
+  }
 
 .nav-container {
   max-width: 1200px;
@@ -207,14 +207,14 @@ body {
 }
 
 /* ヒーロー */
-.hero {
-  position: relative;
-  min-height: 360px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
+    .hero {
+    position: relative;
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
 .hero-logo {
   position: absolute;
   z-index: 1;
@@ -296,9 +296,9 @@ body {
 }
 
 /* セクション共通 */
-.section {
-  padding: 5rem 0;
-}
+    .section {
+    padding: 5rem 0;
+  }
 .section-alt {
   background: #f8f9fa;
 }
@@ -365,10 +365,10 @@ body {
   letter-spacing: 0.2px;
 }
 /* news-tag removed as requested */
-.news-link {
-  color: #333;
-  text-decoration: none;
-}
+    .news-link {
+    color: #333;
+    text-decoration: none;
+  }
 .news-link:hover {
   color: #0066cc;
   text-decoration: underline;
@@ -381,10 +381,10 @@ body {
 }
 
 /* トップ問い合わせバー */
-.contact-topbar {
-  background: #f7fbff;
-  border-bottom: 1px solid #e5eff7;
-}
+    .contact-topbar {
+    background: #f7fbff;
+    border-bottom: 1px solid #e5eff7;
+  }
 .contact-inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -436,13 +436,13 @@ body {
 }
 
 /* ページヘッダー */
-.page-header {
-  position: relative;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  padding: 6rem 0 9rem;
-  height: 360px;
-  overflow: hidden;
-}
+    .page-header {
+    position: relative;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 6rem 0 9rem;
+    height: 360px;
+    overflow: hidden;
+  }
 .page-header::before {
   content: "";
   position: absolute;
@@ -483,14 +483,14 @@ body {
 }
 
 /* 開催情報（トップ） */
-.event-info-modern {
-  background: #fff;
-  border-radius: 16px;
-  padding: 2rem;
-  padding-left: calc(2rem + 15px);
-  padding-right: calc(2rem + 15px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-}
+    .event-info-modern {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    padding-left: calc(2rem + 15px);
+    padding-right: calc(2rem + 15px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
 @media print, screen and (min-width: 768px) {
   .event-info-modern {
     width: 80%;
@@ -548,6 +548,12 @@ body {
   font-weight: 500;
   color: #333;
 }
+
+.event-organizer :last-child,
+.event-co-organizer :last-child {
+  margin-bottom: 0;
+}
+
 @media (max-width: 768px) {
   .event-info-modern {
     padding: 1.5rem;
@@ -577,9 +583,9 @@ body {
 }
 
 /* プログラム（タイムライン、パネリスト） */
-.photo-session {
-  background: linear-gradient(135deg, #fff 0%, #5a7ba7 100%);
-}
+    .photo-session {
+    background: linear-gradient(135deg, #fff 0%, #5a7ba7 100%);
+  }
 .photo-session .timeline-content {
   color: #333;
 }
@@ -683,10 +689,10 @@ body {
 }
 
 /* program-detail */
-.program-detail {
-  padding-left: 15px;
-  padding-right: 15px;
-}
+    .program-detail {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 @media print, screen and (min-width: 768px) {
   .program-detail {
     width: 80%;
@@ -695,19 +701,19 @@ body {
 }
 
 /* ネットワーキング（簡易） */
-.networking-intro {
-  text-align: center;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+    .networking-intro {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
 /* アクセス（地図） */
 
-.access-map-section {
-  margin-top: 1.5rem;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+    .access-map-section {
+    margin-top: 1.5rem;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 @media print, screen and (min-width: 768px) {
   .access-detail {
     width: 80%;
@@ -722,14 +728,14 @@ body {
 .map-note {
   color: #666;
   font-size: 0.9rem;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 /* 登録ページの見出し余白（簡易） */
-.registration-info {
-  padding-left: 15px;
-  padding-right: 15px;
-}
+    .registration-info {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 @media print, screen and (min-width: 768px) {
   .registration-info {
     width: 80%;
@@ -754,12 +760,12 @@ body {
 }
 
 /* 登録カード */
-.registration-types {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
+    .registration-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
 .registration-card {
   background: white;
   border-radius: 16px;
@@ -878,8 +884,8 @@ body {
 }
 
 /* 注意事項（共通） */
-.registration-notes,
-.program-notes {
+    .registration-notes,
+  .program-notes {
   background: #f8f9fa;
   padding: 2rem;
   border-radius: 12px;
@@ -930,10 +936,10 @@ body {
 }
 
 /* フッター直前の大きなお問い合わせCTA */
-.contact-cta-section {
-  padding-top: 0;
-  padding-bottom: 3rem;
-}
+    .contact-cta-section {
+    padding-top: 0;
+    padding-bottom: 3rem;
+  }
 .contact-cta {
   background: linear-gradient(180deg, #f3f8ff 0%, #e9f2ff 100%);
   border: 1px solid #d7e6ff;
@@ -989,5 +995,156 @@ body {
   }
   .contact-cta-phone {
     font-size: 1.1rem;
+  }
+}
+
+/* 会場・アクセスセクション */
+  .section-venue-access {
+  padding: 3rem 0;
+}
+
+.venue-access-card {
+  max-width: 800px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafb 100%);
+  border: 1px solid #e1e8ed;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.venue-main-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #e8ecf0;
+}
+
+.venue-icon {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #2e4ba7 0%, #4169c7 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.venue-text h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 0.25rem 0;
+}
+
+.venue-detail {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0;
+}
+
+.access-routes {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.route-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem;
+  background: #f8fafb;
+  border-radius: 10px;
+  border: 1px solid #e8ecf0;
+}
+
+.route-badge {
+  flex-shrink: 0;
+  padding: 0.25rem 0.625rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.route-badge.jr {
+  background: #00a652;
+  color: white;
+}
+
+.route-badge.subway {
+  background: #0079c2;
+  color: white;
+}
+
+.route-text {
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.venue-detail-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  background: #2e4ba7;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.venue-detail-link:hover {
+  background: #1e3a8a;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(46, 75, 167, 0.3);
+}
+
+.venue-detail-link svg {
+  transition: transform 0.2s;
+}
+
+.venue-detail-link:hover svg {
+  transform: translate(1px, -1px);
+}
+
+@media (max-width: 768px) {
+  .venue-access-card {
+    padding: 1.5rem;
+  }
+
+  .venue-main-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .access-routes {
+    flex-direction: column;
+  }
+
+  .venue-text h3 {
+    font-size: 1.25rem;
+  }
+}
+
+/* マップコンテナのスタイル */
+  .map-container {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .map-container iframe {
+    height: 300px;
   }
 }
