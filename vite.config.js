@@ -6,7 +6,7 @@ import { readdirSync } from 'fs'
 
 // Get all HTML files in root directory
 const getHtmlFiles = () => {
-  const files = readdirSync('.').filter(f => f.endsWith('.html'))
+  const files = readdirSync('.').filter((f) => f.endsWith('.html'))
   return files.reduce((input, file) => {
     input[file.replace('.html', '')] = resolve(__dirname, file)
     return input
@@ -19,13 +19,13 @@ const pageData = {
   program: { pageTitle: 'プログラム', activePage: 'program' },
   networking: { pageTitle: '参加者同士の交流', activePage: 'networking' },
   registration: { pageTitle: '申込情報', activePage: 'registration' },
-  access: { pageTitle: 'アクセス', activePage: 'access' }
+  access: { pageTitle: 'アクセス', activePage: 'access' },
 }
 
 export default defineConfig({
   base: '/tiiki/toc/event/tocforum2025/',
   plugins: [
-    fetchIncludePlugin() // 外部HTMLをfetchして埋め込み（handlebarsは使わない）
+    fetchIncludePlugin(), // 外部HTMLをfetchして埋め込み（handlebarsは使わない）
   ],
   publicDir: 'public',
   build: {
@@ -35,11 +35,11 @@ export default defineConfig({
       input: getHtmlFiles(),
       output: {
         assetFileNames: (assetInfo) => {
-          let extType = assetInfo.name.split('.').at(1);
+          let extType = assetInfo.name.split('.').at(1)
           if (/png|jpe?g|svg|gif|tiff|bmp|ico|webp/i.test(extType)) {
-            extType = 'img';
+            extType = 'img'
           }
-          return `assets/${extType}/[name]-[hash][extname]`;
+          return `assets/${extType}/[name]-[hash][extname]`
         },
         chunkFileNames: 'assets/js/[name]-[hash].js',
         entryFileNames: 'assets/js/[name]-[hash].js',
@@ -48,6 +48,6 @@ export default defineConfig({
   },
   server: {
     port: 3000,
-    open: true
-  }
+    open: true,
+  },
 })
