@@ -732,10 +732,7 @@ body {
 }
 
 /* 登録ページの見出し余白（簡易） */
-.registration-info {
-  padding-left: 15px;
-  padding-right: 15px;
-}
+
 @media print, screen and (min-width: 768px) {
   .registration-info {
     width: 80%;
