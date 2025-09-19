@@ -870,6 +870,7 @@ body {
 .online-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 25px rgba(126, 205, 196, 0.4);
+  color: white;
 }
 .venue-btn {
   background: linear-gradient(135deg, #a5b7dc 0%, #a5b7dc 0%, #9ba6e7 100%);
