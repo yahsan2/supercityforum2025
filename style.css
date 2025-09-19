@@ -19,7 +19,7 @@ body {
 
 /* パンくずリンク */
 .topicPathBlock {
-  padding: 1rem 2rem;
+  padding: 1rem 0rem;
   font-size: 0.875rem;
   color: #333;
   max-width: 1200px;
@@ -771,7 +771,6 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 .registration-card:hover {
-  transform: translateY(-5px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 .card-header {
