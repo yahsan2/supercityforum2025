@@ -374,6 +374,25 @@ body {
   color: #0066cc;
   text-decoration: underline;
 }
+.news-text {
+  color: #333;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.program-placeholder {
+  padding: 40px 20px;
+  text-align: center;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+.program-notice {
+  font-size: 1.6rem;
+  color: #666;
+  margin: 0;
+}
+.program-detail {
+  display: none;
+}
 @media (max-width: 768px) {
   .news-item {
     grid-template-columns: 1fr;
@@ -532,6 +551,16 @@ body {
 }
 .event-time-detail {
   font-size: 1.5rem;
+  color: #666;
+  line-height: 1.2;
+}
+.event-time-main {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+.event-time-sub {
+  font-size: 1.1rem;
   color: #666;
 }
 .event-venue-main {
