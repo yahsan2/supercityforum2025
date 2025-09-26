@@ -987,7 +987,7 @@ body {
 /* フッター直前の大きなお問い合わせCTA */
 .contact-cta-section {
   padding-top: 0;
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
 }
 .contact-cta {
   background: linear-gradient(180deg, #f3f8ff 0%, #e9f2ff 100%);
