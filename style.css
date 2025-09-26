@@ -910,6 +910,25 @@ body {
   box-shadow: 0 6px 25px rgba(107, 134, 199, 0.4);
 }
 
+/* 申込情報ボタン */
+.registration-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #7ecdc4 0%, #5aaba3 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.registration-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(126, 205, 196, 0.3);
+  color: white;
+}
+
 /* 注意事項（共通） */
 .registration-notes,
 .program-notes {
@@ -1010,6 +1029,21 @@ body {
   text-decoration: underline;
 }
 .contact-cta-phone svg {
+  display: block;
+}
+.contact-cta-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0a3b6b;
+  text-decoration: none;
+}
+.contact-cta-email:hover {
+  text-decoration: underline;
+}
+.contact-cta-email svg {
   display: block;
 }
 
