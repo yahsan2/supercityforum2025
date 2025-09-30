@@ -279,7 +279,7 @@ body {
   justify-content: center;
 }
 .logo-cabinet {
-  width: 50vh;
+  width: 95vh;
   max-width: 512px;
 }
 @media (max-width: 768px) {
