@@ -740,6 +740,13 @@ body {
   padding-right: 15px;
 }
 
+@media print, screen and (min-width: 768px) {
+  .networking-intro {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 /* アクセス（地図） */
 
 .access-map-section {
