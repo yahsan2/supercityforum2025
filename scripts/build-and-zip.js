@@ -3,11 +3,13 @@
 import { execSync } from 'child_process'
 import fs from 'fs'
 import path from 'path'
+import os from 'os'
 import archiver from 'archiver'
 
 const projectName = 'sez-forum'
 const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, -5)
 const zipFileName = `${projectName}-${timestamp}.zip`
+const desktopPath = path.join(os.homedir(), 'Desktop', zipFileName)
 
 console.log('🚀 ビルドを開始します...')
 
@@ -32,7 +34,16 @@ async function buildAndZip() {
       output.on('close', () => {
         const sizeInMB = (archive.pointer() / 1024 / 1024).toFixed(2)
         console.log(`✅ ${zipFileName} が作成されました (${sizeInMB}MB)`)
-        console.log(`📁 納品用ファイル: ${path.resolve(zipFileName)}`)
+
+        // ZIPファイルをDesktopに移動
+        try {
+          fs.renameSync(zipFileName, desktopPath)
+          console.log(`📁 納品用ファイルをDesktopに移動しました: ${desktopPath}`)
+        } catch (moveError) {
+          console.error(`⚠️  Desktopへの移動に失敗しました: ${moveError.message}`)
+          console.log(`📁 納品用ファイル: ${path.resolve(zipFileName)}`)
+        }
+
         resolve()
       })
 
