@@ -1,5 +1,5 @@
 {
-  "name": "sez-forum",
+  "name": "supercityforum2026",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "generate": "node scripts/build-and-zip.js",
-    "preview:build": "vite preview --base /tiiki/toc/event/tocforum2025/",
+    "preview:build": "vite preview --base /tiiki/kokusentoc/supercity/supercityforum2026/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

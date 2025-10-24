@@ -4,31 +4,31 @@
   "redirects": [
     {
       "source": "/",
-      "destination": "/tiiki/toc/event/tocforum2025/",
+      "destination": "/tiiki/kokusentoc/supercity/supercityforum2026/",
       "permanent": true
     }
   ],
   "rewrites": [
     {
-      "source": "/tiiki/toc/event/tocforum2025/assets/(.*)",
+      "source": "/tiiki/kokusentoc/supercity/supercityforum2026/assets/(.*)",
       "destination": "/assets/$1"
     },
     {
-      "source": "/tiiki/toc/event/tocforum2025/sousei/(.*)",
+      "source": "/tiiki/kokusentoc/supercity/supercityforum2026/sousei/(.*)",
       "destination": "/sousei/$1"
     },
     {
-      "source": "/tiiki/toc/event/tocforum2025/",
+      "source": "/tiiki/kokusentoc/supercity/supercityforum2026/",
       "destination": "/index.html"
     },
     {
-      "source": "/tiiki/toc/event/tocforum2025/:path*.html",
+      "source": "/tiiki/kokusentoc/supercity/supercityforum2026/:path*.html",
       "destination": "/:path*.html"
     }
   ],
   "headers": [
     {
-      "source": "/tiiki/toc/event/tocforum2025/(.*)",
+      "source": "/tiiki/kokusentoc/supercity/supercityforum2026/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
