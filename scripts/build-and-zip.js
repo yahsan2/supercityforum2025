@@ -6,7 +6,7 @@ import path from 'path'
 import os from 'os'
 import archiver from 'archiver'
 
-const projectName = 'supercityforum2025'
+const projectName = 'supercityforum2026'
 const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, -5)
 const zipFileName = `${projectName}-${timestamp}.zip`
 const desktopPath = path.join(os.homedir(), 'Desktop', zipFileName)

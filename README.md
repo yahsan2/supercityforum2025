@@ -1,7 +1,7 @@
-# スーパーシティ・フォーラム 2025
+# スーパーシティ・フォーラム 2026
 
 ## 概要
-スーパーシティ・フォーラム2025のWebサイトプロジェクトです。
+スーパーシティ・フォーラム2026のWebサイトプロジェクトです。
 
 ## 技術スタック
 - Vite
@@ -51,7 +51,7 @@ npm run generate
 ## プロジェクト構成
 
 ```
-supercityforum2025/
+supercityforum2026/
 ├── dist/               # ビルド出力ディレクトリ
 ├── images/             # 画像ファイル
 ├── js/                 # JavaScriptファイル
@@ -72,7 +72,7 @@ supercityforum2025/
 - access.html - アクセス
 
 ## デプロイ
-本番環境へのデプロイは`/tiiki/toc/event/supercityforum2025/`パスに配置されます。
+本番環境へのデプロイは`/tiiki/kokusentoc/supercity/supercityforum2026/`パスに配置されます。
 
 ## 開発者向け情報
 
