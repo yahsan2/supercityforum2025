@@ -15,7 +15,20 @@ body {
   background-color: #fff;
   overflow-x: hidden;
   position: relative;
+
+  h1,
+  h2,
+  h3 {
+    background-image: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
 }
+
 
 /* パンくずリンク */
 .topicPathBlock {
@@ -27,11 +40,11 @@ body {
 }
 
 /* 日付バナーセクション */
-.event-date-banner {
-  background: linear-gradient(135deg, #2e4ba7 0%, #4169c7 100%);
-  padding: 2rem 0;
-  position: relative;
-}
+                                            .event-date-banner {
+                                            background: #004f8e;
+                                            padding: 2rem 0;
+                                            position: relative;
+                                          }
 
 .date-banner-container {
   max-width: 1200px;
@@ -145,7 +158,7 @@ body {
   background: rgba(255, 255, 255, 0.95);
   padding: 1rem 0;
   position: sticky;
-  top: 94px;
+  top: 16px;
   margin: -86px auto 16px;
   width: fit-content;
   border-radius: 16px;
@@ -206,96 +219,123 @@ body {
 }
 
 /* ヒーロー */
-.hero {
-  position: relative;
-  min-height: 360px;
-  padding-bottom: 32px;
-}
-.hero-logo {
-  position: absolute;
-  z-index: 1;
-  background: #fff;
-  border-radius: 8px;
-  top: 2rem;
-  right: 2rem;
-  padding: 2rem;
-}
-@media (max-width: 768px) {
-  .hero-logo {
-    top: 0.5rem;
-    right: 0.5rem;
-    padding: 0.5rem;
-  }
-}
+                      .hero {
+                      position: relative;
+                      width: 100%;
+                      height: 480px;
+                      overflow: hidden;
+                    }
 
-.hero-logo-image {
-  width: 150px;
-}
+/* 背景画像 */
+                    .hero-background {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 0;
+                  }
 
-@media (max-width: 768px) {
-  .hero-logo-image {
-    width: 100px;
-  }
-}
-.hero-background {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-.hero-background img {
-  height: 100%;
-  object-fit: cover;
-}
 .hero-bg-image {
   width: 100%;
-  height: 80vh;
-  margin: 0 auto;
-  display: block;
+  height: 100%;
   object-fit: cover;
   object-position: center;
+  display: block;
 }
-.hero-content {
+
+/* 右上のロゴエリア */
+  .hero-logos {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo-combined {
+  height: 45px;
+  width: auto;
+  display: block;
+}
+
+/* 下部の青い帯 */
+  .hero-title-band {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  width: 100%;
-  max-width: 1200px;
-  text-align: center;
+  background: linear-gradient(135deg, #004f8e 0%, #1e4a8a 100%);
+  padding: 1.5rem 4rem 1.5rem 4rem;
+  /* margin-left: -2.5rem; */
+  z-index: 2;
+  border-radius: 30px;
+  transform: skewX(-15deg) translate(-50%, -50%);
 }
-.hero-header {
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+
+.hero-title-band > * {
+  transform: skewX(15deg);
 }
-.logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.hero-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.4;
+  margin: 0;
+  text-align: left;
+  font-style: italic;
+  letter-spacing: 0.05em;
 }
-.logo-cabinet {
-  width: 95vh;
-  max-width: 512px;
+
+.hero-subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  /* margin-left: 2rem; */
 }
+
+/* レスポンシブ対応 */
 @media (max-width: 768px) {
-  .hero-content {
-    margin-top: -1.5rem;
-    padding: 2rem 1rem;
+  .hero {
+    height: 400px;
   }
-  .logo-cabinet {
-    width: 95vw;
+
+  .hero-logos {
+    top: 1rem;
+    right: 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .logo-combined {
+    height: 40px;
+  }
+
+  .hero-title-band {
+    bottom: 40px;
+    padding: 1.5rem 2rem;
+    transform: skewX(-12deg);
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    margin-left: 0;
+    display: block;
+    margin-top: 0.5rem;
   }
 }
 
+
 /* セクション共通 */
-.section {
-  padding: 5rem 0;
-}
+            .section {
+            padding: 3rem 0;
+          }
 .section-alt {
   background: #f8f9fa;
 }
@@ -333,7 +373,6 @@ body {
 /* 新着情報 */
 @media print, screen and (min-width: 768px) {
   .container > .news {
-    width: 80%;
     margin: 0 auto;
   }
 }
@@ -353,8 +392,8 @@ body {
   padding: 1rem 1.25rem;
   background: #fff;
   border: 1px solid #eef2f6;
+  background-color: #f6fcff;
   border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
 }
 .news-date {
   font-weight: 800;
@@ -470,11 +509,11 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("./images/hero/page-background.png");
+  background-image: url("./images/hero/page-background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.15;
+  opacity: 0.5;
   z-index: 0;
 }
 .page-header .container,
@@ -505,18 +544,20 @@ body {
   }
 }
 
+
 /* 開催情報（トップ） */
-.event-info-modern {
-  background: #fff;
-  border-radius: 16px;
-  padding: 2rem;
-  padding-left: calc(2rem + 15px);
-  padding-right: calc(2rem + 15px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-}
+      .event-info-modern {
+      background: #fff;
+      border-radius: 16px;
+      padding: 2rem;
+      padding-left: calc(2rem + 15px);
+      padding-right: calc(2rem + 15px);
+      border: 1px solid #f9f9f9;
+      background-color: #f6fcff;
+    }
 @media print, screen and (min-width: 768px) {
   .event-info-modern {
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
   }
 }
@@ -531,7 +572,7 @@ body {
 }
 .event-label-badge {
   flex-shrink: 0;
-  background: #7ecdc4;
+  background: #4fb7e5;
   color: #fff;
   padding: 0.5rem 1.5rem;
   border-radius: 20px;
@@ -548,7 +589,7 @@ body {
   gap: 1rem;
 }
 .event-date-main {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #333;
 }
@@ -558,7 +599,7 @@ body {
   line-height: 1.2;
 }
 .event-time-main {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #333;
 }
@@ -713,11 +754,62 @@ body {
   }
 }
 
-/* about-content */
-@media print, screen and (min-width: 768px) {
-  .about-content {
-    width: 80%;
-    margin: 0 auto;
+/* about-wrapper */
+  #about {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.about-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 200px;
+  height: 200px;
+  background-image: url("./images/pattern1@4x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.about-content {
+  flex: 1;
+
+  p {
+    font-size: 16px;
+  }
+  p + p {
+    margin-top: 1rem;
+  }
+}
+
+.about-map {
+  flex-shrink: 0;
+  width: 350px;
+}
+
+.about-map img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .about-wrapper {
+    flex-direction: column;
+  }
+
+  .about-map {
+    width: 100%;
   }
 }
 
@@ -728,7 +820,7 @@ body {
 }
 @media print, screen and (min-width: 768px) {
   .program-detail {
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
   }
 }
@@ -742,7 +834,7 @@ body {
 
 @media print, screen and (min-width: 768px) {
   .networking-intro {
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
   }
 }
@@ -756,7 +848,7 @@ body {
 }
 @media print, screen and (min-width: 768px) {
   .access-detail {
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
   }
 }
@@ -768,14 +860,14 @@ body {
 .map-note {
   color: #666;
   font-size: 0.9rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 /* 登録ページの見出し余白（簡易） */
 
 @media print, screen and (min-width: 768px) {
   .registration-info {
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
   }
 }
@@ -803,29 +895,35 @@ body {
   gap: 2rem;
   margin-bottom: 3rem;
 }
+
+/* 統合登録カード */
+.registration-unified {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
 .registration-card {
   background: white;
   border-radius: 16px;
   overflow: hidden;
+  border: 1px solid #e0e0e0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
-.registration-card:hover {
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-}
+
 .card-header {
-  padding: 2rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 1rem;
+  background: linear-gradient(135deg, #004f8e 0%, #1e4a8a 100%);
   color: white;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   position: relative;
 }
 .registration-card.online .card-header {
-  background: linear-gradient(135deg, #7ecdc4 0%, #5aaba3 100%);
+  background: linear-gradient(135deg, #4fb7e5 0%, #2596d6 100%);
 }
 .registration-card.venue .card-header {
-  background: linear-gradient(135deg, #a5b7dc 0%, #9ba6e7 100%);
+  background: linear-gradient(135deg, #004f8e 0%, #1e4a8a 100%);
 }
 .card-icon {
   font-size: 2rem;
@@ -834,6 +932,7 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
+  color: white !important;
 }
 .capacity-badge {
   position: absolute;
@@ -847,6 +946,7 @@ body {
 }
 .card-body {
   padding: 2rem;
+  background: white;
 }
 .deadline-info {
   margin-bottom: 2rem;
@@ -903,39 +1003,115 @@ body {
   font-size: 1rem;
 }
 .online-btn {
-  background: linear-gradient(135deg, #7ecdc4 0%, #5aaba3 100%);
+  background: linear-gradient(135deg, #4fb7e5 0%, #2596d6 100%);
   color: white;
 }
 .online-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 25px rgba(126, 205, 196, 0.4);
+  box-shadow: 0 6px 25px rgba(79, 183, 229, 0.4);
+  color: white;
+}
+.online-btn:visited {
   color: white;
 }
 .venue-btn {
-  background: linear-gradient(135deg, #a5b7dc 0%, #a5b7dc 0%, #9ba6e7 100%);
+  background: linear-gradient(135deg, #004f8e 0%, #1e4a8a 100%);
   color: white;
 }
 .venue-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 25px rgba(107, 134, 199, 0.4);
+  box-shadow: 0 6px 25px rgba(0, 79, 142, 0.4);
+}
+.venue-btn:visited {
+  color: white;
+}
+
+/* 統合ボタン */
+.unified-btn {
+  background: linear-gradient(135deg, #004f8e 0%, #1e4a8a 100%);
+  color: white !important;
+}
+.unified-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0, 79, 142, 0.4);
+  color: white;
+}
+.unified-btn:visited {
+  color: white;
+}
+
+/* 参加オプション */
+.participation-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.option-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 2px solid #e0e0e0;
+}
+
+.option-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.option-content {
+  flex: 1;
+}
+
+.option-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #004f8e;
+  margin: 0 0 0.5rem 0;
+}
+
+.option-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0 0 0.5rem 0;
+}
+
+.option-deadline {
+  font-size: 0.85rem;
+  color: #999;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .participation-options {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* 申込情報ボタン */
-.registration-button {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
+          .registration-button {
+          display: inline-block;
+          margin-top: 1rem;
+          padding: 0.75rem 1.5rem;
+          background: #004f8e;
+          color: white;
+          text-decoration: none;
+          border-radius: 8px;
+          font-weight: 600;
+          font-size: 0.9rem;
+          transition:
+            transform 0.2s,
+            box-shadow 0.2s;
+        }
 .registration-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+  color: white;
+}
+.registration-button:visited {
   color: white;
 }
 
@@ -976,7 +1152,7 @@ body {
   content: "✓";
   position: absolute;
   left: 0;
-  color: #7ecdc4;
+  color: #4fb7e5;
   font-weight: 700;
 }
 
@@ -1001,11 +1177,10 @@ body {
   border: 1px solid #d7e6ff;
   border-radius: 16px;
   padding: 2rem;
-  box-shadow: 0 6px 24px rgba(0, 44, 92, 0.08);
 }
 @media print, screen and (min-width: 768px) {
   .contact-cta {
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
   }
 }
