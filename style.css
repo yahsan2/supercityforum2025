@@ -803,14 +803,241 @@ body {
   }
 }
 
+/* about-content */
+@media print, screen and (min-width: 768px) {
+  .about-content {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 /* program-detail */
 .program-detail {
   padding-left: 15px;
   padding-right: 15px;
 }
-.program-detail {
-  /* width: 80%; */
-  margin: 0 auto;
+
+.schedule-timeline {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* テーマセクション */
+.panel-themes {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.theme-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.theme-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.theme-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.theme-list li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+/* モデレーターセクション */
+.moderator-section {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.moderator-section .panelist-item {
+  background: #f0f4ff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* パネリストテーマ */
+.panelist-theme {
+  font-size: 1.2rem;
+  color: #2563eb;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+@media print, screen and (min-width: 768px) {
+  .program-detail {
+    width: 80%;
+    margin: 32px auto 0;
+  }
+}
+
+/* プログラム（タイムライン、パネリスト） */
+.timeline-content {
+  flex: 1;
+}
+
+.timeline-content > *:last-child {
+  margin-bottom: 0;
+}
+
+.photo-session {
+  background: linear-gradient(135deg, #fff 0%, #5a7ba7 100%);
+}
+.photo-session .timeline-content {
+  color: #333;
+}
+.photo-session h3 {
+  color: #333;
+}
+.photo-session p {
+  color: #555;
+}
+.panel-subtitle {
+  margin: 1rem 0;
+  color: #666;
+  line-height: 1.6;
+}
+.panelist-section {
+  margin-top: 2rem;
+}
+
+/* パネリストグリッドレイアウト */
+.panelist-grid .panelist-label {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.panelist-grid-items {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.panelist-grid .panelist-item {
+  flex: 0 1 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.panelist-grid .panelist-info {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .panelist-grid-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .panelist-grid .panelist-item {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.panelist-label {
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.panelist-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #eee;
+  border-radius: 8px;
+}
+.panelist-photo {
+  flex-shrink: 0;
+  width: 120px;
+  height: 160px;
+}
+.panelist-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+}
+.panelist-info {
+  flex: 1;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.panelist-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+}
+.panelist-name .honorific {
+  font-size: 0.85rem;
+  font-weight: normal;
+}
+.panelist-title {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+.timeline-item {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  border-left: 3px solid #e0e0e0;
+  position: relative;
+  align-items: center;
+}
+
+.timeline-item + .timeline-item {
+  border-top: 1px solid #e0e0e0;
+}
+
+.timeline-item.featured {
+  border-left-color: #0066cc;
+  background: #f8f9ff;
+}
+.timeline-time {
+  flex-shrink: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0066cc;
+}
+.timeline-content h4 {
+  color: #666;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+@media (max-width: 768px) {
+  .panelist-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .panelist-photo {
+    margin: 0 auto;
+  }
+  .timeline-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
 
 /* ネットワーキング（簡易） */
