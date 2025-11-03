@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "generate": "node scripts/build-and-zip.js",
-    "preview:build": "vite preview --base /tiiki/kokusentoc/supercity/supercityforum2026/",
+    "preview:build": "vite preview --base /tiiki/toc/event/supercityforum2025/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

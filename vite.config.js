@@ -23,7 +23,7 @@ const pageData = {
 }
 
 export default defineConfig({
-  base: '/tiiki/kokusentoc/supercity/supercityforum2026/',
+  base: '/tiiki/toc/event/supercityforum2025/',
   plugins: [
     fetchIncludePlugin(), // 外部HTMLをfetchして埋め込み（handlebarsは使わない）
   ],
