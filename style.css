@@ -881,7 +881,6 @@ body {
 }
 @media print, screen and (min-width: 768px) {
   .program-detail {
-    width: 80%;
     margin: 32px auto 0;
   }
 }
@@ -1038,18 +1037,6 @@ body {
     flex-direction: column;
     gap: 0.5rem;
   }
-}
-
-/* ネットワーキング（簡易） */
-.networking-intro {
-  text-align: center;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.networking-intro {
-  /* width: 80%; */
-  margin: 0 auto;
 }
 
 /* アクセス（地図） */
@@ -1331,6 +1318,7 @@ body {
   padding: 2rem;
   border-radius: 12px;
   margin-top: 3rem;
+  color: #666;
 }
 .registration-notes h3,
 .program-notes h3 {
