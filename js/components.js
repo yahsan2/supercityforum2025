@@ -13,8 +13,8 @@ class ComponentLoader {
    */
   getBasePath() {
     const path = window.location.pathname
-    if (path.includes('/tiiki/kokusentoc/supercity/supercityforum2026/')) {
-      return '/tiiki/kokusentoc/supercity/supercityforum2026'
+    if (path.includes('/tiiki/toc/event/supercityforum2025/')) {
+      return '/tiiki/toc/event/supercityforum2025'
     }
     return '.'
   }

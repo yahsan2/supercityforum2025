@@ -72,7 +72,7 @@ supercityforum2026/
 - access.html - アクセス
 
 ## デプロイ
-本番環境へのデプロイは`/tiiki/kokusentoc/supercity/supercityforum2026/`パスに配置されます。
+本番環境へのデプロイは`/tiiki/toc/event/supercityforum2025/`パスに配置されます。
 
 ## 開発者向け情報
 
