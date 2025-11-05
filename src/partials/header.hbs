@@ -1,53 +1,240 @@
-<!-- 政府サイト互換CSS読み込み -->
-<link href="https://www.chisou.go.jp/tiiki/common/css/common.css" rel="stylesheet" type="text/css" />
-<link href="https://www.chisou.go.jp/tiiki/common/css/common02.css" rel="stylesheet" type="text/css" />
-<link href="https://www.chisou.go.jp/tiiki/common/css/common03.css" rel="stylesheet" type="text/css" />
-<link href="https://www.chisou.go.jp/tiiki/common/css/custom.css" rel="stylesheet" type="text/css" />
-<link href="https://www.chisou.go.jp/tiiki/common/css/custom02.css" rel="stylesheet" type="text/css" />
-<link href="https://www.chisou.go.jp/tiiki/common/css/custom03.css" rel="stylesheet" type="text/css" />
-<link href="https://www.chisou.go.jp/tiiki/common/css/adjust.css" rel="stylesheet" type="text/css" />
+<!-- 政府サイト共通CSS読み込み -->
+<link rel="stylesheet" href="https://www.chisou.go.jp/common/css/all.min.css">
+<link rel="stylesheet" href="https://www.chisou.go.jp/common/css/common_header.css">
+<link rel="stylesheet" href="https://www.chisou.go.jp/common/css/common_footer.css">
+<link rel="stylesheet" href="https://www.chisou.go.jp/sousei/common/chisou/css/common.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.google.com/cse/static/style/look/v4/default.css">
+<link rel="stylesheet" href="https://www.google.com/cse/static/element/6467658b9628de43/default+ja.css">
 
-<!-- Google Programmable Search Engine -->
-<script async src="https://cse.google.com/cse.js?cx=425d04d30ecfe48fa"></script>
+<!-- 政府サイト完全互換ヘッダー -->
+<header id="headerTopBlock" class="headerTopBlockBgArea sticky-top">
+    <div class="container py-0">
+        <div id="searchFormBlock" class="headerRow" style="display:none;">
+            <div id="searchPart">
+                <div class="searchForm">
+                    <script async src="https://cse.google.com/cse.js?cx=0566ce7480c9da979"></script>
+                    <div class="gcse-search"></div>
+                </div>
+            </div>
+        </div>
+        <div id="headerHeight" class="headerRow row m-0">
+            <div class="headerLeftBlock col-md-3 col-5">
+                <a href="/sousei/"><img src="https://www.chisou.go.jp/sousei/common/chisou/img/new_logo_title.jpg" alt="地方創生"> </a>
+            </div>
+            <div class="headerCenterBlock col-md-6 m-0">
+                <div class="openSubMenu" data-target="seisaku">
+                    <div class="openSubMenuContent">
+                        <img src="https://www.chisou.go.jp/sousei/common/chisou/img/pencil.png">
+                        <span class="openSubMenuTitle">政策</span>
+                    </div>
+                    <div id="seisakuSubMenu" class="headerLocalMenuBlock row" style="display:none;">
+                        <div class="headerLocalMenuTitleBlock col-md-4">
+                            <div class="row">
+                                <div class="col-md-6 text-left m-0 p-0">
+                                    <img src="https://www.chisou.go.jp/sousei/common/chisou/img/pencil.png">
+                                    <span class="localMenuTitle">政 策</span>
+                                </div>
+                                <div class="col-md-6 rightBlock m-0 p-0">
+                                    <span class="localSubTitle">Policy</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="headerLocalSubMenuBlock col-md-8">
+                            <ul>
+                                <li><a href="/sousei/policy_index.html"><u>施策</u></a></li>
+                                <li><a href="/sousei/meeting_index.html"><u>会議・資料</u></a></li>
+                                <li><a href="/sousei/kakugi_index.html"><u>関連法令・閣議決定等</u></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="openSubMenu" data-target="jirei">
+                    <div class="openSubMenuContent">
+                        <img src="https://www.chisou.go.jp/sousei/common/chisou/img/book.png">
+                        <span class="openSubMenuTitle">事例･分析</span>
+                    </div>
+                    <div id="jireiSubMenu" class="headerLocalMenuBlock row" style="display:none;">
+                        <div class="headerLocalMenuTitleBlock col-md-4">
+                            <div class="row">
+                                <div class="col-md-6 text-left m-0 p-0">
+                                    <img src="https://www.chisou.go.jp/sousei/common/chisou/img/book.png">
+                                    <span class="localMenuTitle">事例･分析</span>
+                                </div>
+                                <div class="col-md-6 rightBlock m-0 p-0">
+                                    <span class="localSubTitle">Case study</span>
+                                    <span class="localSubTitle">Analysis</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="headerLocalSubMenuBlock col-md-8">
+                            <ul>
+                                <li><a href="/sousei/data/case_index.html"><u>事例</u></a></li>
+                                <li><a href="/sousei/analysis.html"><u>分析ツール</u></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="openSubMenu" data-target="houdou">
+                    <div class="openSubMenuContent">
+                        <a href="/sousei/kouhou/index.html">
+                            <img src="https://www.chisou.go.jp/sousei/common/chisou/img/microphone.png">
+                            <span class="openSubMenuTitle">報道</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="headerRightBox col-md-3 row m-0 p-0">
+                <div class="headerCenterRightBlock col-md-5 row m-0 p-0">
+                    <div id="openSearchForm" class="col-md-6 my-auto w-10">
+                        <div>
+                            <img src="https://www.chisou.go.jp/sousei/common/chisou/img/search.png">
+                            <div>検索</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-auto w-10">
+                        <a href="/sousei/contact_index.html">
+                            <div>
+                                <img src="https://www.chisou.go.jp/sousei/common/chisou/img/letter.png">
+                                <div>お問合せ</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="headerRightBlock col-md-7 row">
+                    <!-- subMenuBlock Start -->
+                    <div class="headerSubMenuBlock col-md-3">
+                        <a href="/sousei/link/facebook_unyouhoushin.html">
+                            <img src="https://www.chisou.go.jp/sousei/common/chisou/img/logo_facebook.png">
+                        </a>
+                    </div>
+                    <div class="headerSubMenuBlock col-md-3">
+                        <a href="/sousei/link/x_unyouhoushin.html">
+                            <img src="https://www.chisou.go.jp/sousei/common/chisou/img/logo_X.png">
+                        </a>
+                    </div>
+                    <div class="headerSubMenuBlock col-md-3">
+                        <a href="/sousei/link/youtube_unyouhoushin.html">
+                            <img src="https://www.chisou.go.jp/sousei/common/chisou/img/logo_youtube.png">
+                        </a>
+                    </div>
+                    <div class="headerSubMenuBlock col-md-3">
+                        <a href="/sousei/link/note_unyouhoushin.html">
+                            <img src="https://www.chisou.go.jp/sousei/common/chisou/img/logo_note.png">
+                        </a>
+                    </div>
+                    <!-- subMenuBlock End -->
+                </div>
+            </div>
 
-<!-- 政府サイトヘッダー（JSレンダリング版） -->
-<div id="header"><!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YSVBEE4RF7"></script>
-<!-- Google Programmable Search Engintag -->
-<script async="" src="https://cse.google.com/cse.js?cx=425d04d30ecfe48fa"></script>
+            <div class="headerForSP offset-3 col-4 row">
+                <div id="openSearch" class="headerIconForSP col-6">
+                    <img src="https://www.chisou.go.jp/sousei/common/chisou/img/search.png">
+                </div>
+                <div id="searchForSP" class="headerRow" style="display:none;">
+                    <div id="searchPartForSP">
+                        <div class="searchForm">
+                            <script async src="https://cse.google.com/cse.js?cx=0566ce7480c9da979"></script>
+                            <div class="gcse-search"></div>
+                        </div>
+                    </div>
+                    <div id="closeSearch">
+                        <span> 閉じる</span>
+                    </div>
+                </div>
+                <div id="openMenu" class="headerIconForSP col-6">
+                    <div>
+                        <img src="https://www.chisou.go.jp/sousei/common/chisou/img/menu.png">
+                        <div class="openMenuName">メニュー</div>
+                    </div>
+                </div>
+                <div class="menuForSP" style="display: none;">
+                    <div class="contentsForSearch">
+                        <div class="searchContent">
+                            <div class="searchText">
+                                キーワードで探す
+                            </div>
+                            <div class="searchForm">
+                                <script async src="https://cse.google.com/cse.js?cx=0566ce7480c9da979"></script>
+                                <div class="gcse-search"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="headerLocalMenuBlock">
+                        <div class="headerLocalMenuTitleBlock">
+                            <input id="seisakuMenu" class="localMenu" type="checkbox">
+                            <label class="localMenuTitle" for="seisakuMenu">政策</label>
+                            <div class="headerLocalSubMenuBlock">
+                                <ul>
+                                    <li><a href="/sousei/policy_index.html"><u>施策</u></a></li>
+                                    <li><a href="/sousei/meeting_index.html"><u>会議・資料</u></a></li>
+                                    <li><a href="/sousei/kakugi_index.html"><u>関連法令・閣議決定等</u></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="headerLocalMenuBlock">
+                        <div class="headerLocalMenuTitleBlock">
+                            <input id="jireiMenu" class="localMenu" type="checkbox">
+                            <label class="localMenuTitle" for="jireiMenu">事例･分析</label>
+                            <div class="headerLocalSubMenuBlock">
+                                <ul>
+                                    <li><a href="/sousei/data/case_index.html"><u>事例</u></a></li>
+                                    <li><a href="/sousei/analysis.html"><u>分析ツール</u></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="headerLocalMenuBlock">
+                        <div class="headerLocalMenuTitleBlock">
+                            <input id="houdouMenu" class="localMenu" type="checkbox">
+                            <label class="localMenuTitle" for="houdouMenu">報道</label>
+                            <div class="headerLocalSubMenuBlock">
+                                <ul>
+                                    <li><a href="/sousei/kouhou/index.html"><u>報道</u></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="closeMenu">
+                        <span> 閉じる</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    // 政府サイト互換JavaScript
+    $(document).ready(function() {
+        // サブメニューの開閉
+        $('.openSubMenu').on('click', function() {
+            var target = $(this).data('target');
+            $('#' + target + 'SubMenu').slideToggle();
+        });
 
-  gtag('config', 'G-YSVBEE4RF7');
+        // 検索フォーム開閉
+        $('#openSearchForm').on('click', function() {
+            $('#searchFormBlock').slideToggle();
+        });
+
+        // SP用メニュー
+        $('#openMenu').on('click', function() {
+            $('.menuForSP').slideToggle();
+        });
+
+        $('#closeMenu').on('click', function() {
+            $('.menuForSP').slideUp();
+        });
+
+        $('#openSearch').on('click', function() {
+            $('#searchForSP').slideToggle();
+        });
+
+        $('#closeSearch').on('click', function() {
+            $('#searchForSP').slideUp();
+        });
+    });
 </script>
-
-<div class="layout inner">
-	<div class="logo"><a href="https://www.chisou.go.jp/tiiki/kokusentoc/index.html"><img src="https://www.chisou.go.jp/tiiki/common/img02/logo.png" alt="内閣府国家戦略特区" width="207" height="56"></a></div>
-	<div class="header_item">
-		<div class="header_link">
-			<ul>
-				<li><a href="https://www.facebook.com/kokusentoc" target="_blank"><img src="https://www.chisou.go.jp/tiiki/common/img/logo_facebook.png" width="25" alt="国家戦略特区　Facebookはこちら"></a></li>
-				<li><a href="https://x.com/kouhou_sousei" target="_blank"><img src="https://www.chisou.go.jp/tiiki/common/img/logo_X.png" width="25"></a></li>
-				<li><a href="https://www.youtube.com/playlist?list=PL3KafRaSNhNltkCvWUE4nJauKISvreRT4" target="_blank"><img src="https://www.chisou.go.jp/tiiki/common/img/logo_youtube.png" width="25"></a></li>
-				<li><a href="https://cao-chisou-gov.note.jp/" target="_blank"><img src="https://www.chisou.go.jp/tiiki/common/img/logo_note.png" width="25"></a></li>
-				<li class="btnLink"><a href="https://www.chisou.go.jp/tiiki/kokusentoc/english/index.html">English</a></li>
-				<li><div id="___gcse_0"><div class="gsc-control-cse gsc-control-cse-ja"><div class="gsc-control-wrapper-cse" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" role="presentation" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id1"><table cellspacing="0" cellpadding="0" role="presentation" id="gs_id50" class="gstl_50 gsc-input" style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti50" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="検索" aria-label="検索" id="gsc-i-id1" dir="ltr" spellcheck="false" style="width: 100%; padding: 0px; border: none; margin: -0.0625em 0px 0px; height: 1.25em; background: url(&quot;https://www.google.com/cse/static/images/1x/ja/branding.png&quot;) left center no-repeat rgb(255, 255, 255); outline: none;"></td><td class="gsib_b"><div class="gsst_b" id="gs_st50" dir="ltr"><a class="gsst_a" href="javascript:void(0)" title="検索ボックスをクリア" role="button" style="display: none;"><span class="gscb_a" id="gs_cb50" aria-hidden="true">×</span></a></div></td></tr></tbody></table></div></td><td class="gsc-search-button"><button class="gsc-search-button gsc-search-button-v2"><svg width="13" height="13" viewBox="0 0 13 13"><title>検索</title><path d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"></path></svg></button></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="結果をクリア">&nbsp;</div></td></tr></tbody></table></form><div class="gsc-results-wrapper-overlay"><div class="gsc-results-close-btn" tabindex="0"></div><div class="gsc-positioningWrapper"><div class="gsc-tabsAreaInvisible"><div aria-label="refinement" role="tab" class="gsc-tabHeader gsc-inline-block gsc-tabhActive">ウェブ</div><span class="gs-spacer"> </span><div tabindex="0" aria-label="refinement" role="tab" class="gsc-tabHeader gsc-tabhInactive gsc-inline-block">画像</div><span class="gs-spacer"> </span></div></div><div class="gsc-positioningWrapper"><div class="gsc-refinementsAreaInvisible"></div></div><div class="gsc-above-wrapper-area-invisible"><div class="gsc-above-wrapper-area-backfill-container"></div><table cellspacing="0" cellpadding="0" role="presentation" class="gsc-above-wrapper-area-container"><tbody><tr><td class="gsc-result-info-container"><div class="gsc-result-info-invisible"></div></td><td class="gsc-orderby-container"><div class="gsc-orderby-invisible"><div class="gsc-orderby-label gsc-inline-block">表示順:</div><div class="gsc-option-menu-container gsc-inline-block"><div class="gsc-selected-option-container gsc-inline-block"><div class="gsc-selected-option">Relevance</div><div class="gsc-option-selector"></div></div><div class="gsc-option-menu-invisible"><div class="gsc-option-menu-item gsc-option-menu-item-highlighted"><div class="gsc-option">Relevance</div></div><div class="gsc-option-menu-item"><div class="gsc-option">Date</div></div></div></div></div></td></tr></tbody></table></div><div class="gsc-adBlockInvisible"></div><div class="gsc-wrapper"><div class="gsc-adBlockInvisible"></div><div class="gsc-resultsbox-invisible"><div class="gsc-resultsRoot gsc-tabData gsc-tabdActive"><div><div class="gsc-expansionArea"></div></div></div><div class="gsc-resultsRoot gsc-tabData gsc-tabdInactive"><div><div class="gsc-expansionArea"></div></div></div></div></div></div><div class="gsc-modal-background-image" tabindex="0"></div></div></div></div></li>
-			</ul>
-		</div>
-	</div>
-</div>
-<div class="g_nav">
-	<div class="inner">
-		<ul>
-			<li class="current"><a href="https://www.chisou.go.jp/tiiki/kokusentoc/index.html">TOP</a></li>
-			<li><a href="https://www.chisou.go.jp/tiiki/kokusentoc/kokkasenryakutoc.html">制度概要</a></li>
-			<li><a href="https://www.chisou.go.jp/tiiki/kokusentoc/shiteikuiki.html">指定区域</a></li>
-			<li><a href="https://www.chisou.go.jp/tiiki/kokusentoc/menu.html">規制改革メニュー</a></li>
-			<li><a href="https://www.chisou.go.jp/tiiki/kokusentoc/teian.html">提案募集</a></li>
-			<li><a href="https://www.chisou.go.jp/tiiki/kokusentoc/koubo.html">構成員公募</a></li>
-		</ul>
-	</div>
-</div>
-</div>
