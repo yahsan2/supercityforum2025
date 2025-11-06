@@ -29,7 +29,11 @@ body {
   }
 }
 
-
+  @media (min-width: 1280px) {
+    .sp {
+      display: none;
+    }
+  }
 /* パンくずリンク */
 .topicPathBlock {
   padding: 1rem 0rem;
@@ -245,19 +249,24 @@ body {
 }
 
 /* 右上のロゴエリア */
-  .hero-logos {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  z-index: 2;
-  background: rgba(255, 255, 255, 0.95);
-  padding: 1.5rem 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-}
+                                                        .hero-logos {
+                                                        position: absolute;
+                                                        top: 2rem;
+                                                        right: 2rem;
+                                                        z-index: 2;
+                                                        display: flex;
+                                                        gap: 12px;
+                                                        .hero-logo {
+                                                          display: block;
+                                                          background: rgba(255, 255, 255, 0.95);
+                                                          padding: 1rem 1.5rem;
+                                                          border-radius: 8px;
+                                                          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+                                                        }
+                                                      }
 
 .logo-combined {
-  height: 45px;
+  height: 54px;
   width: auto;
   display: block;
 }
@@ -306,16 +315,21 @@ body {
   .hero-logos {
     top: 1rem;
     right: 1rem;
-    padding: 0.75rem 1rem;
+    .hero-logo {
+      padding: 0.5rem 1rem;
+    }
   }
 
   .logo-combined {
-    height: 40px;
+    height: 36px;
   }
 
   .hero-title-band {
-    bottom: 40px;
-    padding: 1.5rem 2rem;
+    top: 100px;
+    left: 20px;
+    /* top: auto; */
+    width: calc(100% - 40px);
+    padding: 1rem 1.5rem;
     transform: skewX(-12deg);
   }
 
@@ -366,7 +380,7 @@ body {
 }
 @media (max-width: 768px) {
   .section {
-    padding: 3rem 0 4.5rem;
+    padding: 4.5rem 0;
   }
 }
 
@@ -427,6 +441,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .container > .news {
+    width: 100%;
+  }
   .news-item {
     grid-template-columns: 1fr;
     gap: 0.25rem;
@@ -626,6 +643,7 @@ body {
 
 @media (max-width: 768px) {
   .event-info-modern {
+    width: 100%;
     padding: 1.5rem;
   }
   .event-info-row {
@@ -802,7 +820,8 @@ body {
   }
 
   .about-map {
-    width: 100%;
+    margin-top: -2rem;
+    width: 80%;
   }
 }
 
@@ -814,12 +833,18 @@ body {
 }
 
 /* program-detail */
+    .program-detail {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+@media print, screen and (min-width: 768px) {
   .program-detail {
-  width: 80%;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
+
 
 .schedule-timeline {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -1230,11 +1255,13 @@ body {
 }
 
 /* 登録ページの見出し余白（簡易） */
-
-    .registration-info {
+@media print, screen and (min-width: 768px) {
+  .registration-info {
     width: 80%;
     margin: 0 auto;
   }
+}
+
 .registration-info h3 {
   font-size: 1.5rem;
   font-weight: 600;
@@ -1532,19 +1559,22 @@ body {
 }
 
 /* フッター直前の大きなお問い合わせCTA */
-.contact-cta-section {
-  padding-top: 0;
-  padding-bottom: 6rem;
-}
+    .contact-cta-section {
+    padding-top: 0;
+    padding-bottom: 6rem;
+  }
 .contact-cta {
   background: linear-gradient(180deg, #f3f8ff 0%, #e9f2ff 100%);
   border: 1px solid #d7e6ff;
   border-radius: 16px;
   padding: 2rem;
+  box-shadow: 0 6px 24px rgba(0, 44, 92, 0.08);
 }
-.contact-cta {
-  width: 80%;
-  margin: 0 auto;
+@media print, screen and (min-width: 768px) {
+  .contact-cta {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 .contact-cta-title {
   font-size: 1.5rem;
@@ -1594,7 +1624,7 @@ body {
   display: block;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .contact-cta {
     padding: 1.5rem;
   }
@@ -1604,7 +1634,7 @@ body {
   .contact-cta-phone {
     font-size: 1.1rem;
   }
-} */
+}
 
 /* 会場・アクセスセクション */
 .section-venue-access {
