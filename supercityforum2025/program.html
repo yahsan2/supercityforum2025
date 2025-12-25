@@ -41,6 +41,7 @@
 
         /* アーカイブ動画リンクのスタイル */
         .video-link {
+            display: none;
             margin-top: 12px;
         }
         .video-link a,
@@ -94,6 +95,13 @@
             line-height: 1.5;
             margin-bottom: 6px;
             color: #555;
+        }
+        h3 + .panelist-item {
+            margin-top: 1rem;
+        }
+        .panelist-name .honorific {
+            font-size: 0.85em;
+            font-weight: normal;
         }
         .panelist-row .panelist-item .panelist-name {
             font-size: 1em;
@@ -222,7 +230,7 @@
                       </div>
                       <div class="panelist-info">
                         <p class="panelist-title">岡山県吉備中央町 町長</p>
-                        <p class="panelist-name">山本 雅則 氏</p>
+                        <p class="panelist-name">山本 雅則 <span class="honorific">氏</span></p>
                         <div class="video-link">
                           <span class="video-link-btn">アーカイブ動画（近日公開）</span>
                         </div>
@@ -231,9 +239,17 @@
                   </div>
                 </div>
 
-                <!-- 基調講演・首長講演・パネルディスカッション説明 -->
-                <div class="timeline-item featured">
+                <!-- 開催地挨拶 -->
+                <div class="timeline-item">
                   <div class="timeline-time">14:05〜14:10</div>
+                  <div class="timeline-content">
+                    <h3>開催地挨拶</h3>
+                  </div>
+                </div>
+
+                <!-- パネルディスカッション -->
+                <div class="timeline-item featured">
+                  <div class="timeline-time">14:10〜15:30</div>
                   <div class="timeline-content">
                     <h3>パネルディスカッション：デジタル田園健康特区のこれから</h3>
                     <p class="panel-subtitle">健康・医療分野をはじめとした地域の課題解決に向け、それぞれの区域での取組や成果、課題を踏まえ各地域が目指す将来像等について住民視点で議論を行います。</p>
@@ -251,10 +267,7 @@
                       </div>
                       <div class="panelist-info">
                         <p class="panelist-title">内閣府地方創生推進事務局</p>
-                        <p class="panelist-theme">「デジタル田園健康特区のこれから」</p>
-                        <div class="video-link">
-                          <span class="video-link-btn">アーカイブ動画（近日公開）</span>
-                        </div>
+                        <p class="panelist-name">小山 和久 <span class="honorific">氏</span></p>
                       </div>
                     </div>
 
@@ -265,10 +278,7 @@
                       </div>
                       <div class="panelist-info">
                         <p class="panelist-title">岡山県吉備中央町 町長</p>
-                        <p class="panelist-name">山本 雅則 氏</p>
-                        <div class="video-link">
-                          <span class="video-link-btn">アーカイブ動画（近日公開）</span>
-                        </div>
+                        <p class="panelist-name">山本 雅則 <span class="honorific">氏</span></p>
                       </div>
                     </div>
 
@@ -279,10 +289,7 @@
                       </div>
                       <div class="panelist-info">
                         <p class="panelist-title">石川県加賀市 市長</p>
-                        <p class="panelist-name">山田 利明 氏</p>
-                        <div class="video-link">
-                          <span class="video-link-btn">アーカイブ動画（近日公開）</span>
-                        </div>
+                        <p class="panelist-name">山田 利明 <span class="honorific">氏</span></p>
                       </div>
                     </div>
 
@@ -293,21 +300,10 @@
                       </div>
                       <div class="panelist-info">
                         <p class="panelist-title">長野県茅野市 市長</p>
-                        <p class="panelist-name">今井 敦 氏</p>
-                        <div class="video-link">
-                          <span class="video-link-btn">アーカイブ動画（近日公開）</span>
-                        </div>
+                        <p class="panelist-name">今井 敦 <span class="honorific">氏</span></p>
                       </div>
                     </div>
-                  </div>
-                </div>
 
-                <!-- パネルディスカッション -->
-                <div class="timeline-item featured">
-                  <div class="timeline-time">14:10〜15:30</div>
-                  <div class="timeline-content">
-                    <h3>パネルディスカッション：デジタル田園健康特区のこれから</h3>
-                    <p class="panel-subtitle">健康・医療分野をはじめとした地域の課題解決に向け、それぞれの区域での取組や成果、課題を踏まえ各地域が目指す将来像等について住民視点で議論を行います。</p>
                     <div class="panelist-section">
                       <div class="panelist-row">
                         <!-- 那須保友 氏 -->
@@ -317,7 +313,7 @@
                           </div>
                           <div class="panelist-info">
                             <p class="panelist-title">吉備中央町総括アーキテクト、国立大学法人 岡山大学学長</p>
-                            <p class="panelist-name">那須 保友 氏</p>
+                            <p class="panelist-name">那須 保友 <span class="honorific">氏</span></p>
                           </div>
                         </div>
 
@@ -328,7 +324,7 @@
                           </div>
                           <div class="panelist-info">
                             <p class="panelist-title">吉備中央町補佐アーキテクト、岡山大学病院 副病院長</p>
-                            <p class="panelist-name">櫻井 淳 氏</p>
+                            <p class="panelist-name">櫻井 淳 <span class="honorific">氏</span></p>
                           </div>
                         </div>
 
@@ -339,7 +335,7 @@
                           </div>
                           <div class="panelist-info">
                             <p class="panelist-title">加賀市アーキテクト、加賀市CDO</p>
-                            <p class="panelist-name">山内 智史 氏</p>
+                            <p class="panelist-name">山内 智史 <span class="honorific">氏</span></p>
                           </div>
                         </div>
 
@@ -350,7 +346,7 @@
                           </div>
                           <div class="panelist-info">
                             <p class="panelist-title">茅野市DX企画幹、リードアーキテクト、組合立諏訪中央病院 医師</p>
-                            <p class="panelist-name">須田 万勢 氏</p>
+                            <p class="panelist-name">須田 万勢 <span class="honorific">氏</span></p>
                           </div>
                         </div>
 
@@ -360,8 +356,8 @@
                             <img src="./assets/img/speaker-asonuma.jpg" alt="阿曽沼 元博">
                           </div>
                           <div class="panelist-info">
-                            <p class="panelist-title">順天堂大学客員教授（情報センター本部）、<br>NPO法人TeamNET理事長、前国家戦略特区ワーキンググループ委員</p>
-                            <p class="panelist-name">阿曽沼 元博 氏</p>
+                            <p class="panelist-title">（仮）順天堂大学客員教授（情報センター本部）、<br>NPO法人TeamNET理事長、前国家戦略特区ワーキンググループ委員</p>
+                            <p class="panelist-name">阿曽沼 元博 <span class="honorific">氏</span></p>
                           </div>
                         </div>
                       </div>
@@ -395,7 +391,7 @@
                       </div>
                       <div class="panelist-info">
                         <p class="panelist-title">（吉備中央町）岡山大学病院</p>
-                        <p class="panelist-name">上田 浩平 氏</p>
+                        <p class="panelist-name">上田 浩平 <span class="honorific">氏</span></p>
                         <p class="panelist-theme">「吉備中央町の救急医療　〜現状と未来〜」</p>
                         <div class="video-link">
                           <span class="video-link-btn">アーカイブ動画（近日公開）</span>
@@ -412,8 +408,8 @@
                       <div class="panelist-info">
                         <p class="panelist-title">（加賀市）</p>
                         <ul class="panelist-name-list">
-                          <li>NTTデータ経営研究所　<strong>桜花 和也</strong> 氏</li>
-                          <li>かまちょっかい株式会社　<strong>金城 拓登</strong> 氏</li>
+                          <li>NTTデータ経営研究所　<strong>桜花 和也</strong> <span class="honorific">氏</span></li>
+                          <li>かまちょっかい株式会社　<strong>金城 拓登</strong> <span class="honorific">氏</span></li>
                         </ul>
                         <p class="panelist-theme">「医療版情報銀行」</p>
                         <div class="video-link">
@@ -429,7 +425,7 @@
                       </div>
                       <div class="panelist-info">
                         <p class="panelist-title">（茅野市）一般社団法人 コミュニティヘルス研究機構</p>
-                        <p class="panelist-name">山岸 暁美 氏</p>
+                        <p class="panelist-name">山岸 暁美 <span class="honorific">氏</span></p>
                         <p class="panelist-theme">「未来志向の医療・ケア実装におけるDXの活用と専門性の進化/深化」</p>
                         <div class="video-link">
                           <span class="video-link-btn">アーカイブ動画（近日公開）</span>
@@ -452,7 +448,7 @@
                   <div class="timeline-time">16:50〜17:00</div>
                   <div class="timeline-content">
                     <h3>閉会・退場</h3>
-                    <p>※企業・団体ブースは18:00まで開場しています。</p>
+                    <p>ホワイエでの企業・団体ブースは18:00まで開場しています。</p>
                   </div>
                 </div>
               </div>
