@@ -10,25 +10,41 @@
     padding: 10px 0;
 }
 
-/* アーカイブ動画リンクのスタイル */
+/* 動画リンクのスタイル */
 .video-link {
-    display: none;
-    margin-top: 12px;
-}
-.video-link a,
-.video-link-btn {
+    margin-top: 8px;
     display: inline-block;
-    color: #fff;
-    background-color: #0a3b6b;
-    font-size: 0.85em;
-    text-decoration: none;
-    padding: 6px 16px;
-    border: 1px solid #0a3b6b;
-    border-radius: 4px;
 }
-.video-link a:hover,
-.video-link-btn:hover {
-    background-color: #0d4a85;
+.video-link a {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 8px;
+    border: 2.5px solid #ffffff;
+    border-radius: 4px;
+    background-color: #e40000;
+    transition: border 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s, transform 0.3s;
+}
+.video-link a::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    background: url("../img/icon_movie.svg") no-repeat center / contain;
+    filter: invert(1) brightness(10);
+    vertical-align: middle;
+    margin: -0.25rem 0.5rem 0 0;
+}
+.video-link a:hover {
+    background-color: #ffffff;
+    color: #e40000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(125, 125, 125, 0.3);
+}
+.video-link a:hover::before {
+    filter: none;
 }
 
 /* 登壇者グリッド（2列） */
