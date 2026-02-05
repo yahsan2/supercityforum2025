@@ -1,141 +1,146 @@
 .search {
-    background-color: #4D90FE;
-    width: 100px;
-    color: #fff;
-    font-size: 1.142857em;
-    margin-left: 5px;
+	background-color: #4d90fe;
+	width: 100px;
+	color: #fff;
+	font-size: 1.142857em;
+	margin-left: 5px;
 }
 
 .contentsForSearch {
-    padding: 10px 0;
+	padding: 10px 0;
 }
 
 /* 動画リンクのスタイル */
 .video-link {
-    margin-top: 8px;
-    display: block;
+	margin-top: 8px;
+	display: block;
 }
 .video-link a {
-    display: inline-block;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 0.9em;
-    font-weight: bold;
-    padding: 8px;
-    border: 2.5px solid #ffffff;
-    border-radius: 4px;
-    background-color: #e40000;
-    transition: border 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s, transform 0.3s;
+	display: inline-block;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 0.9em;
+	font-weight: bold;
+	padding: 8px;
+	border: 2.5px solid #ffffff;
+	border-radius: 4px;
+	background-color: #e40000;
+	transition:
+		border 0.3s,
+		box-shadow 0.3s,
+		background-color 0.3s,
+		color 0.3s,
+		transform 0.3s;
 }
 .video-link a::before {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 14px;
-    background: url("../img/icon_movie.svg") no-repeat center / contain;
-    filter: invert(1) brightness(10);
-    vertical-align: middle;
-    margin: -0.25rem 0.5rem 0 0;
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 14px;
+	background: url("../img/icon_movie.svg") no-repeat center / contain;
+	filter: invert(1) brightness(10);
+	vertical-align: middle;
+	margin: -0.25rem 0.5rem 0 0;
 }
 .video-link a:hover {
-    background-color: #ffffff;
-    color: #e40000;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(125, 125, 125, 0.3);
+	background-color: #ffffff;
+	color: #e40000;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 15px rgba(125, 125, 125, 0.3);
 }
 .video-link a:hover::before {
-    filter: none;
+	filter: none;
 }
 
 /* 登壇者グリッド（2列） */
 .panelist-row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-top: 15px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	margin-top: 15px;
 }
 .panelist-row .panelist-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    margin-bottom: 0;
+	display: flex;
+	align-items: flex-start;
+	gap: 15px;
+	margin-bottom: 0;
 }
 .panelist-row .panelist-item .panelist-photo {
-    flex-shrink: 0;
-    width: 100px;
-    height: 130px;
+	flex-shrink: 0;
+	width: 100px;
+	height: 130px;
 }
 .panelist-row .panelist-item .panelist-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-    border-radius: 4px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+	border-radius: 4px;
 }
 .panelist-row .panelist-item .panelist-info {
-    flex: 1;
-    text-align: left;
-    padding: 0;
+	flex: 1;
+	text-align: left;
+	padding: 0;
 }
 .panelist-row .panelist-item .panelist-title {
-    font-size: 0.8em;
-    line-height: 1.5;
-    margin-bottom: 6px;
-    color: #555;
+	font-size: 0.8em;
+	line-height: 1.5;
+	margin-bottom: 6px;
+	color: #555;
 }
 h3 + .panelist-item {
-    margin-top: 1rem;
+	margin-top: 1rem;
 }
 .panelist-name .honorific {
-    font-size: 0.85em;
-    font-weight: normal;
+	font-size: 0.85em;
+	font-weight: normal;
 }
 .panelist-row .panelist-item .panelist-name {
-    font-size: 1em;
-    font-weight: bold;
+	font-size: 1em;
+	font-weight: bold;
 }
 
 /* 縦写真対応 */
 .panelist-photo.portrait img {
-    object-fit: cover;
-    object-position: top;
+	object-fit: cover;
+	object-position: top;
 }
 
 /* すべてのサムネイルにborder-radius適用 */
 .panelist-photo img {
-    border-radius: 4px;
+	border-radius: 4px;
 }
 
 /* 2人縦並びサムネイル */
 .panelist-photo-double {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    flex-shrink: 0;
-    width: 120px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	flex-shrink: 0;
+	width: 120px;
 }
 .panelist-photo-double img {
-    width: 100%;
-    height: 156px;
-    object-fit: cover;
-    object-position: top;
-    border-radius: 4px;
+	width: 100%;
+	height: 156px;
+	object-fit: cover;
+	object-position: top;
+	border-radius: 4px;
 }
 .panelist-name-list {
-    list-style: disc;
-    padding-left: 20px;
-    margin: 0;
+	list-style: disc;
+	padding-left: 20px;
+	margin: 0;
 }
 .panelist-name-list li {
-    margin-bottom: 4px;
+	margin-bottom: 4px;
 }
 
 /* セクション説明 */
 .section-description-list {
-    margin: 10px 0 20px 0;
-    padding-left: 20px;
+	margin: 10px 0 20px 0;
+	padding-left: 20px;
 }
 .section-description-list li {
-    margin-bottom: 5px;
-    color: #333;
+	margin-bottom: 5px;
+	color: #333;
 }

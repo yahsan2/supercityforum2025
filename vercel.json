@@ -1,40 +1,40 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "/tiiki/toc/event/supercityforum2025/",
-      "permanent": true
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/tiiki/toc/event/supercityforum2025/assets/(.*)",
-      "destination": "/assets/$1"
-    },
-    {
-      "source": "/tiiki/toc/event/supercityforum2025/sousei/(.*)",
-      "destination": "/sousei/$1"
-    },
-    {
-      "source": "/tiiki/toc/event/supercityforum2025/",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/tiiki/toc/event/supercityforum2025/:path*.html",
-      "destination": "/:path*.html"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/tiiki/toc/event/supercityforum2025/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600"
-        }
-      ]
-    }
-  ]
+	"buildCommand": "npm run build",
+	"outputDirectory": "dist",
+	"redirects": [
+		{
+			"source": "/",
+			"destination": "/tiiki/toc/event/supercityforum2025/",
+			"permanent": true
+		}
+	],
+	"rewrites": [
+		{
+			"source": "/tiiki/toc/event/supercityforum2025/assets/(.*)",
+			"destination": "/assets/$1"
+		},
+		{
+			"source": "/tiiki/toc/event/supercityforum2025/sousei/(.*)",
+			"destination": "/sousei/$1"
+		},
+		{
+			"source": "/tiiki/toc/event/supercityforum2025/",
+			"destination": "/index.html"
+		},
+		{
+			"source": "/tiiki/toc/event/supercityforum2025/:path*.html",
+			"destination": "/:path*.html"
+		}
+	],
+	"headers": [
+		{
+			"source": "/tiiki/toc/event/supercityforum2025/(.*)",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=3600"
+				}
+			]
+		}
+	]
 }

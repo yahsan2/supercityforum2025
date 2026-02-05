@@ -1,28 +1,28 @@
 {
-  "name": "supercityforum2026",
-  "version": "1.0.0",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "generate": "node scripts/build-and-zip.js",
-    "preview:build": "vite preview --base /tiiki/toc/event/supercityforum2025/",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@biomejs/biome": "^2.2.3",
-    "archiver": "^7.0.1",
-    "playwright": "^1.56.1",
-    "vite": "^7.1.4",
-    "vite-plugin-handlebars": "^2.0.0"
-  },
-  "dependencies": {
-    "node-fetch": "^2.7.0"
-  }
+	"name": "supercityforum2026",
+	"version": "1.0.0",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"generate": "node scripts/build-and-zip.js",
+		"preview:build": "vite preview --base /tiiki/toc/event/supercityforum2025/",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@biomejs/biome": "^2.2.3",
+		"archiver": "^7.0.1",
+		"playwright": "^1.56.1",
+		"vite": "^7.1.4",
+		"vite-plugin-handlebars": "^2.0.0"
+	},
+	"dependencies": {
+		"node-fetch": "^2.7.0"
+	}
 }
