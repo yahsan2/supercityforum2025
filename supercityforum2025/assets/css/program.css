@@ -13,7 +13,7 @@
 /* 動画リンクのスタイル */
 .video-link {
     margin-top: 8px;
-    display: inline-block;
+    display: block;
 }
 .video-link a {
     display: inline-block;
