@@ -48,6 +48,20 @@
             top: -1px;
             border: 1px solid rgba(0, 0, 0, .1);
         }
+        .booth-detail-link {
+            display: inline-block;
+            border: 2px solid #e40000;
+            color: #e40000;
+            border-radius: 4px;
+            padding: 4px 12px;
+            font-size: 0.85em;
+            text-decoration: none;
+            margin-top: 4px;
+            transition: opacity 160ms ease-in-out;
+        }
+        .booth-detail-link:hover {
+            opacity: 0.7;
+        }
     </style>
 </header>
 
@@ -90,7 +104,7 @@
         <div class="nav-container">
           <div class="nav-links">
             <a href="./index.html" class="nav-link">トップ</a>
-            <a href="./program.html" class="nav-link">プログラム</a>
+            <a href="./program.html" class="nav-link">プログラム／アーカイブ動画</a>
             <a href="./networking.html" class="nav-link active">企業・団体ブース</a>
             <a href="./registration.html" class="nav-link">申込情報</a>
             <a href="./access.html" class="nav-link">アクセス</a>
@@ -103,61 +117,15 @@
         <div class="container">
           <div class="networking-intro">
             <h2 class="section-title">企業・団体ブース</h2>
-            <p class="lead-text">ホワイエに各地域と連携して取組を行っている企業・団体にブースを出展いただきます。<br>情報交換や交流の場としてご活用ください。</p>
+            <p class="lead-text">当日は、ホワイエに各地域と連携して取組を行っている企業・団体にブースを出展いただき、情報交換や交流の場としてご活用いただきました。</p>
           </div>
 
           <div class="networking-items">
-            <!-- Item 1: 参加者の属性がわかるネームホルダー -->
+            <!-- ブース案内板の設置 -->
             <div class="networking-item">
-              <h3 class="networking-item-title">①参加者の属性がわかるネームホルダー</h3>
+              <h3 class="networking-item-title">①ブース案内板の設置</h3>
               <div class="networking-item-content">
-                <p>参加者属性（自治体職員、企業など）に応じた色のネームホルダーを受付でお渡しします。交流する際にお相手の属性が一目で分かり、スムーズな交流を後押しします。</p>
-              </div>
-            </div>
-
-            <!-- 参加者属性ごとの色対照表 -->
-            <!-- NOTE: 属性の名称について今後変更される可能性があります -->
-            <div class="networking-color-code" style="padding: 0px; margin-bottom: 2rem;">
-              <h3 class="color-code-title">参加者属性ごとの色対照表</h3>
-              <div class="table-responsive">
-                <table class="color-table">
-                  <thead>
-                    <tr>
-                      <th>属性</th>
-                      <th>ネームホルダーの色</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>岡山県民</td>
-                      <td class="text-center"><span class="color-square" style="background-color: red;"></span> 赤</td>
-                    </tr>
-                    <tr>
-                      <td>企業</td>
-                      <td class="text-center"><span class="color-square" style="background-color: yellow;"></span> 黄</td>
-                    </tr>
-                    <tr>
-                      <td>自治体・省庁</td>
-                      <td class="text-center"><span class="color-square" style="background-color: green;"></span> 緑</td>
-                    </tr>
-                    <tr>
-                      <td>学生</td>
-                      <td class="text-center"><span class="color-square" style="background-color: blue;"></span> 青</td>
-                    </tr>
-                    <tr>
-                      <td>個人・その他</td>
-                      <td class="text-center"><span class="color-square" style="background-color: white; border: 1px solid black;"></span> 白</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            <!-- Item 2: ブース案内板の設置 -->
-            <div class="networking-item">
-              <h3 class="networking-item-title">②ブース案内板の設置</h3>
-              <div class="networking-item-content">
-                <p>各区域の事業者ブースがどこに展示しているのか、一覧で把握できるようブース案内板を設置しています。健康に関するアンケートを通じて、皆さまのご関心に合った事業者ブースをご案内します。</p>
+                <p>各区域の企業・団体ブースがどこに展示しているのか、一覧で把握できるようブース案内板を設置しました。健康に関するアンケートを通じて、皆さまのご関心に合った企業・団体ブースをご案内しました。</p>
               </div>
             </div>
 
@@ -178,45 +146,55 @@
                     <!-- 吉備中央町エリア -->
                     <tr>
                       <td rowspan="4" style="vertical-align: top; font-weight: bold;">吉備中央町エリア</td>
-                      <td>国立大学法人 岡山大学</td>
+                      <td>国立大学法人 岡山大学<br><a href="#" target="_blank" class="booth-detail-link">展示内容はこちら</a><!-- TODO: ブース概要説明用紙のリンクを後日設定 --></td>
                       <td>「きびアプリ」ダウンロード推進活動からの学び</td>
                     </tr>
                     <tr>
-                      <td>バーズ・ビュー株式会社</td>
+                      <td>バーズ・ビュー株式会社<br><a href="#" target="_blank" class="booth-detail-link">展示内容はこちら</a><!-- TODO: ブース概要説明用紙のリンクを後日設定 --></td>
                       <td>救急搬送支援システム・デジタル田園健康特区事業紹介</td>
                     </tr>
                     <tr>
-                      <td>富士通株式会社・<br>富士通Japan株式会社</td>
+                      <td>富士通株式会社・<br>富士通Japan株式会社<br><a href="#" target="_blank" class="booth-detail-link">展示内容はこちら</a><!-- TODO: ブース概要説明用紙のリンクを後日設定 --></td>
                       <td>Well-Being×デジタルツイン</td>
                     </tr>
                     <tr>
-                      <td>有限責任組合吉備中央町<br>インクルーシブスクエア</td>
+                      <td>有限責任組合吉備中央町<br>インクルーシブスクエア<br><a href="#" target="_blank" class="booth-detail-link">展示内容はこちら</a><!-- TODO: ブース概要説明用紙のリンクを後日設定 --></td>
                       <td>きびアプリの紹介</td>
                     </tr>
 
                     <!-- 加賀市エリア -->
                     <tr>
                       <td rowspan="3" style="vertical-align: top; font-weight: bold;">加賀市エリア</td>
-                      <td>かまちょっかい株式会社</td>
+                      <td>かまちょっかい株式会社<br><a href="#" target="_blank" class="booth-detail-link">展示内容はこちら</a><!-- TODO: ブース概要説明用紙のリンクを後日設定 --></td>
                       <td>業務アプリ生成ツール「アプダス」の紹介</td>
                     </tr>
                     <tr>
-                      <td>株式会社NTTデータ経営研究所</td>
+                      <td>株式会社NTTデータ経営研究所<br><a href="#" target="_blank" class="booth-detail-link">展示内容はこちら</a><!-- TODO: ブース概要説明用紙のリンクを後日設定 --></td>
                       <td>加賀市医療版情報銀行</td>
                     </tr>
                     <tr>
-                      <td>日本航空株式会社</td>
+                      <td>日本航空株式会社<br><a href="#" target="_blank" class="booth-detail-link">展示内容はこちら</a><!-- TODO: ブース概要説明用紙のリンクを後日設定 --></td>
                       <td>自立型の空飛ぶクルマを用いた災害対応支援</td>
                     </tr>
 
                     <!-- 茅野市エリア -->
                     <tr>
                       <td style="vertical-align: top; font-weight: bold;">茅野市エリア</td>
-                      <td>株式会社トラジェクトリー</td>
+                      <td>株式会社トラジェクトリー<br><a href="#" target="_blank" class="booth-detail-link">展示内容はこちら</a><!-- TODO: ブース概要説明用紙のリンクを後日設定 --></td>
                       <td>ドローン航路を活用した八ヶ岳山荘への物資配送</td>
                     </tr>
                   </tbody>
                 </table>
+              </div>
+            </div>
+
+            <!-- 当日の様子 -->
+            <div class="event-photos" style="margin-top: 2rem;">
+              <h3 class="color-code-title">当日の様子</h3>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 1rem;">
+                <img src="./assets/img/event-photo-1.jpg" alt="企業・団体ブースの様子1" style="width: 100%; border-radius: 4px;">
+                <img src="./assets/img/event-photo-2.jpg" alt="企業・団体ブースの様子2" style="width: 100%; border-radius: 4px;">
+                <img src="./assets/img/event-photo-3.jpg" alt="企業・団体ブースの様子3" style="width: 100%; border-radius: 4px;">
               </div>
             </div>
           </div>
