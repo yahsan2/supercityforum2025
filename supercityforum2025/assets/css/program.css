@@ -135,6 +135,17 @@ h3 + .panelist-item {
 	margin-bottom: 4px;
 }
 
+/* パネルセクション見出し（1. 基調講演、2. 首長講演、3. パネルディスカッション） */
+.panel-section-title {
+	font-size: 1.15em;
+	font-weight: bold;
+	border-left: 4px solid #0a3b6b;
+	padding-left: 10px;
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
+	line-height: 1.5;
+}
+
 /* セクション説明 */
 .section-description-list {
 	margin: 10px 0 20px 0;
