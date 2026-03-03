@@ -155,3 +155,9 @@ h3 + .panelist-item {
 	margin-bottom: 5px;
 	color: #333;
 }
+
+/* プログラム概要文のフォントサイズ調整 */
+.panel-subtitle,
+.panel-description {
+	font-size: 0.88em;
+}
