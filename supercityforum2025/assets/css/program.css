@@ -160,4 +160,5 @@ h3 + .panelist-item {
 .panel-subtitle,
 .panel-description {
 	font-size: 0.88em;
+	color: #333;
 }
