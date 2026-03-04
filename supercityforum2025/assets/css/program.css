@@ -162,3 +162,7 @@ h3 + .panelist-item {
 	font-size: 0.88em;
 	color: #333;
 }
+.timeline-content .panelist-title,
+.timeline-content .panelist-theme {
+	color: #333;
+}
