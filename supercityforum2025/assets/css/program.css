@@ -156,9 +156,9 @@ h3 + .panelist-item {
 	color: #333;
 }
 
-/* プログラム概要文のフォントサイズ調整 */
-.panel-subtitle,
-.panel-description {
+/* プログラム概要文のフォントサイズ・色調整 */
+.timeline-content .panel-subtitle,
+.timeline-content .panel-description {
 	font-size: 0.88em;
 	color: #333;
 }
